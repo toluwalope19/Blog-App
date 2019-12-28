@@ -5,13 +5,13 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Home"/>
 
-    <item android:id="@+id/navigation_curriculum"
+    <item android:id="@+id/navigation_favourites"
         android:icon="@drawable/ic_star_black_24dp"
         android:title="favourites"/>
     <item android:id="@+id/navigation_post"
         android:icon="@drawable/ic_add_circle_outline_black_24dp"
         android:title="AddPost"/>
-    <item android:id="@+id/naviagtion_resources"
+    <item android:id="@+id/naviagtion_search"
         android:icon="@drawable/ic_search_black_24dp"
         android:title="search"/>
 

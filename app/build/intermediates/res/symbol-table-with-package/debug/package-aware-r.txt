@@ -1257,8 +1257,8 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id nav_controller_view_tag
-id naviagtion_resources
-id navigation_curriculum
+id naviagtion_search
+id navigation_favourites
 id navigation_header_container
 id navigation_home
 id navigation_post
@@ -1424,6 +1424,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout add_post_fragment
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1439,6 +1440,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout favourites_fragment
+layout home_fragment
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1456,6 +1459,8 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout profile_fragment
+layout search_fragment
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
