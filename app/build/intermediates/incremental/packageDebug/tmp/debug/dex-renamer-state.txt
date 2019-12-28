@@ -1,0 +1,4 @@
+#Sat Dec 28 23:02:46 WAT 2019
+base.0=C\:\\Users\\Ayodele\\BlogApp\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
