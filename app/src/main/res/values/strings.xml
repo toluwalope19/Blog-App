@@ -2,6 +2,7 @@
     <string name="app_name">Blog-App</string>
     <string name="category">Category</string>
     <string name="title">Title</string>
+    <string name="post">Post</string>
     <string name="today">Today</string>
 
 </resources>
