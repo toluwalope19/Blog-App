@@ -3,6 +3,10 @@
     <string name="category">Category</string>
     <string name="title">Title</string>
     <string name="post">Post</string>
+    <string name="postTitle">Post Title</string>
+    <string name="writePost">Write Post</string>
+    <string name="submit_Post">Submit Post</string>
+    <string name="categoryRequired">Please fill in all field before submission</string>
     <string name="today">Today</string>
 
 </resources>

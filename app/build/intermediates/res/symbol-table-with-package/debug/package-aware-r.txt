@@ -834,6 +834,7 @@ dimen activity_vertical_margin
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
+dimen category
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -901,6 +902,8 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
+dimen icon_margin
+dimen icon_margin1
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -973,6 +976,8 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen title
+dimen today
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1083,9 +1088,13 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edittext
 drawable home_icon
 drawable ic_add_circle_outline_black_24dp
+drawable ic_check_black_24dp
+drawable ic_edit_black_24dp
 drawable ic_home_black_24dp
+drawable ic_keyboard_backspace_black_24dp
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1093,6 +1102,8 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_person_black_24dp
 drawable ic_search_black_24dp
 drawable ic_star_black_24dp
+drawable images
+drawable javascipt
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1108,6 +1119,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable post_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font opensans_font
@@ -1174,6 +1186,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addPost
+id addPostTitle
 id alertTitle
 id all
 id always
@@ -1209,6 +1223,8 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detail_category
+id detail_title
 id dialog_button
 id dimensions
 id direct
@@ -1218,6 +1234,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id error1
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1231,12 +1248,19 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id guideline
+id guideline2
+id guideline3
 id home
 id homeAsUp
 id icon
 id icon_group
 id ifRoom
 id image
+id imageView
+id imageView2
+id imageView3
+id img_Btn
 id info
 id invisible
 id italic
@@ -1279,9 +1303,12 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id post
+id post_detail
 id progress_circular
 id progress_horizontal
 id radio
+id recycler_viewHome
 id right
 id right_icon
 id right_side
@@ -1316,6 +1343,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner
 id split_action_bar
 id spread
 id spread_inside
@@ -1342,6 +1370,8 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1363,6 +1393,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id viewPager2
 id view_offset_helper
 id visible
 id withText
@@ -1425,6 +1456,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout add_post_fragment
+layout card_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1442,6 +1474,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout favourites_fragment
 layout home_fragment
+layout home_post_row
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1459,6 +1492,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout post_detail_fragment
 layout profile_fragment
 layout search_fragment
 layout select_dialog_item_material
@@ -1498,6 +1532,8 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string category
+string categoryRequired
 string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior
@@ -1511,8 +1547,14 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string post
+string postTitle
 string search_menu_title
 string status_bar_notification_info_overflow
+string submit_Post
+string title
+string today
+string writePost
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
