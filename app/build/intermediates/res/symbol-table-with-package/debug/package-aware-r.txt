@@ -898,6 +898,7 @@ dimen header_padding
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
+dimen hint
 dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
@@ -1082,6 +1083,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable camera
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1089,6 +1091,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edittext
+drawable facebook
+drawable gallery
 drawable home_icon
 drawable ic_add_circle_outline_black_24dp
 drawable ic_check_black_24dp
@@ -1102,8 +1106,11 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_person_black_24dp
 drawable ic_search_black_24dp
 drawable ic_star_black_24dp
+drawable icon_back
 drawable images
+drawable insta
 drawable javascipt
+drawable log_out
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1119,9 +1126,11 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pinterest
 drawable post_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable twitter
 font opensans_font
 font opensans_regular
 font opensans_semibold
@@ -1305,9 +1314,13 @@ id percent
 id pin
 id post
 id post_detail
+id profile_image
+id profile_name
+id profile_role
 id progress_circular
 id progress_horizontal
 id radio
+id recycler_storiesProfile
 id recycler_viewHome
 id right
 id right_icon
@@ -1472,6 +1485,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout edit_post_fragment
 layout favourites_fragment
 layout home_fragment
 layout home_post_row
@@ -1502,6 +1516,7 @@ layout support_simple_spinner_dropdown_item
 menu bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
+string Stories
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1554,6 +1569,7 @@ string status_bar_notification_info_overflow
 string submit_Post
 string title
 string today
+string update_Post
 string writePost
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

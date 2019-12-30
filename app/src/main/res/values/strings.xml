@@ -5,7 +5,9 @@
     <string name="post">Post</string>
     <string name="postTitle">Post Title</string>
     <string name="writePost">Write Post</string>
+    <string name="Stories">Your Stories</string>
     <string name="submit_Post">Submit Post</string>
+    <string name="update_Post">Update Post</string>
     <string name="categoryRequired">Please fill in all field before submission</string>
     <string name="today">Today</string>
 

@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:background="@color/second_text"
         android:textColor="@color/white"
-        android:text="@string/submit_Post"/>
+        android:text="@string/update_Post"/>
 
 
 
