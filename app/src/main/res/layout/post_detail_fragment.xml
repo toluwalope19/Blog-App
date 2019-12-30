@@ -65,7 +65,7 @@
             app:layout_constraintBottom_toTopOf="@id/guideline3"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/icon_margin"
-            android:src="@drawable/ic_star_black_24dp"
+            android:src="@drawable/ic_star_border_black_24dp"
              />
 
         <androidx.constraintlayout.widget.ConstraintLayout
