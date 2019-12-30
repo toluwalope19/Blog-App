@@ -5151,12 +5151,12 @@ public final class R {
     public static final int mtrl_internal_children_alpha_tag=0x7f090099;
     public static final int multiply=0x7f09009a;
     public static final int nav_controller_view_tag=0x7f09009b;
-    public static final int naviagtion_search=0x7f09009c;
-    public static final int navigation_favourites=0x7f09009d;
-    public static final int navigation_header_container=0x7f09009e;
-    public static final int navigation_home=0x7f09009f;
-    public static final int navigation_post=0x7f0900a0;
-    public static final int navigation_profile=0x7f0900a1;
+    public static final int navigation_favourites=0x7f09009c;
+    public static final int navigation_header_container=0x7f09009d;
+    public static final int navigation_home=0x7f09009e;
+    public static final int navigation_post=0x7f09009f;
+    public static final int navigation_profile=0x7f0900a0;
+    public static final int navigation_search=0x7f0900a1;
     public static final int never=0x7f0900a2;
     public static final int none=0x7f0900a3;
     public static final int normal=0x7f0900a4;
@@ -5375,11 +5375,12 @@ public final class R {
     public static final int notification_template_part_time=0x7f0c0042;
     public static final int post_detail_fragment=0x7f0c0043;
     public static final int profile_fragment=0x7f0c0044;
-    public static final int search_fragment=0x7f0c0045;
-    public static final int select_dialog_item_material=0x7f0c0046;
-    public static final int select_dialog_multichoice_material=0x7f0c0047;
-    public static final int select_dialog_singlechoice_material=0x7f0c0048;
-    public static final int support_simple_spinner_dropdown_item=0x7f0c0049;
+    public static final int search_bar=0x7f0c0045;
+    public static final int search_fragment=0x7f0c0046;
+    public static final int select_dialog_item_material=0x7f0c0047;
+    public static final int select_dialog_multichoice_material=0x7f0c0048;
+    public static final int select_dialog_singlechoice_material=0x7f0c0049;
+    public static final int support_simple_spinner_dropdown_item=0x7f0c004a;
   }
   public static final class menu {
     public static final int bottom_navigation=0x7f0d0000;
