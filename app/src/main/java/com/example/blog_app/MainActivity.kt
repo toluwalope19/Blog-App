@@ -67,6 +67,12 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                     .replace(R.id.Fragment, addPost).commit()
                 return true
             }
+            navigation_search->{
+                getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.Fragment, search).commit()
+                return true
+            }
             navigation_profile ->{
                 getSupportFragmentManager()
                     .beginTransaction()

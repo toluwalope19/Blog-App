@@ -1290,12 +1290,12 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id nav_controller_view_tag
-id naviagtion_search
 id navigation_favourites
 id navigation_header_container
 id navigation_home
 id navigation_post
 id navigation_profile
+id navigation_search
 id never
 id none
 id normal
@@ -1508,6 +1508,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout post_detail_fragment
 layout profile_fragment
+layout search_bar
 layout search_fragment
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
