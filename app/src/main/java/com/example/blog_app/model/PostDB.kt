@@ -15,7 +15,6 @@ abstract class PostDB : RoomDatabase() {
         private var instance: PostDB? = null
         fun createDB( context: Context): PostDB {
 
-
             if(instance == null){
                 instance = Room.databaseBuilder(context,
                     PostDB::class.java,"Data").allowMainThreadQueries().build()
@@ -24,7 +23,5 @@ abstract class PostDB : RoomDatabase() {
             }
             return instance!!
         }
-
-
     }
 }
