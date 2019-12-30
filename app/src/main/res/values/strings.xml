@@ -6,6 +6,7 @@
     <string name="postTitle">Post Title</string>
     <string name="writePost">Write Post</string>
     <string name="fav">Checkout Your Favourites Stories</string>
+    <string name="interest">Stories that might interest you</string>
     <string name="Stories">Your Stories</string>
     <string name="submit_Post">Submit Post</string>
     <string name="update_Post">Update Post</string>

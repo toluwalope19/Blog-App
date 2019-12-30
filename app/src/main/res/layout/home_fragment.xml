@@ -3,10 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:paddingStart="@dimen/activity_horizontal_margin"
-
+    android:paddingEnd="16dp"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".Home.HomeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        android:textColor="@color/text"
+        android:text="@string/interest"/>
 
   <androidx.viewpager2.widget.ViewPager2
       android:id="@+id/viewPager2"

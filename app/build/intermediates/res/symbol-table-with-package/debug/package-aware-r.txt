@@ -741,6 +741,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color star
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1096,6 +1097,7 @@ drawable gallery
 drawable home_icon
 drawable ic_add_circle_outline_black_24dp
 drawable ic_check_black_24dp
+drawable ic_delete_black_24dp
 drawable ic_edit_black_24dp
 drawable ic_home_black_24dp
 drawable ic_keyboard_backspace_black_24dp
@@ -1106,6 +1108,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_person_black_24dp
 drawable ic_search_black_24dp
 drawable ic_star_black_24dp
+drawable ic_star_border_black_24dp
 drawable icon_back
 drawable images
 drawable insta
@@ -1128,6 +1131,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pinterest
 drawable post_background
+drawable star
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable twitter
@@ -1320,6 +1324,7 @@ id profile_role
 id progress_circular
 id progress_horizontal
 id radio
+id recycler_favourites
 id recycler_storiesProfile
 id recycler_viewHome
 id right
@@ -1486,6 +1491,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout edit_post_fragment
+layout favourite_post_row
 layout favourites_fragment
 layout home_fragment
 layout home_post_row
@@ -1508,6 +1514,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout post_detail_fragment
 layout profile_fragment
+layout profile_post_row
 layout search_bar
 layout search_fragment
 layout select_dialog_item_material
@@ -1554,7 +1561,9 @@ string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fav
 string hide_bottom_view_on_scroll_behavior
+string interest
 string mtrl_chip_close_icon_content_description
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
