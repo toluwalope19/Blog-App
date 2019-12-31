@@ -42,7 +42,7 @@ class PostRepository private constructor(application: Application){
         return postLocalDataSource.savePost(post)
     }
 
-    fun updatePos(post: Post){
+    fun updatePost(post: Post){
         return postLocalDataSource.updatePost(post)
     }
 

@@ -18,7 +18,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun updatePosts(post: Post){
-        return postRepository.updatePos(post)
+        return postRepository.updatePost(post)
     }
 
 }

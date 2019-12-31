@@ -1,4 +1,4 @@
-package com.example.blog_app
+package com.example.blog_app.editPost
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import com.example.blog_app.R
 import kotlinx.android.synthetic.main.add_post_fragment.*
 
 
