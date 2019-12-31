@@ -12,5 +12,15 @@
     <string name="update_Post">Update Post</string>
     <string name="categoryRequired">Please fill in all field before submission</string>
     <string name="today">Today</string>
+    
+    <array name="categories">
+        <item>Choose Category</item>
+        <item>Sport</item>
+        <item>News</item>
+        <item>Entertainment</item>
+        <item>Fashion</item>
+        <item>Travel</item>
+
+    </array>
 
 </resources>

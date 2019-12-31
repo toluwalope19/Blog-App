@@ -27,38 +27,16 @@ class EditPostFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.add_post_fragment, container, false)
-        val spinner = view.findViewById(R.id.spinner) as Spinner
         val edit = view.findViewById<EditText>(R.id.post)
+        var categories = view.findViewById<EditText>(R.id.addCategory)
         val error1 =view.findViewById<TextView>(R.id.error1)
 
-        option = spinner
 
-        val categories = arrayListOf("Choose Category", "Sport", "News", "Entertainment", "Fashion", "Travel")
-        option.adapter = ArrayAdapter<String>(
-            requireActivity(),
-            android.R.layout.simple_list_item_1,
-            categories
-        )
 
-        option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(parent: AdapterView<*>?) {
 
-            }
-
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-
-                if(categories.get(position)!="Choose Category"){
-                    error1.visibility= View.GONE
-                    option.setBackgroundResource(R.drawable.edittext)
-                }
                 addPost.setOnClickListener{ view ->
 
-                    if(categories.get(position)=="Choose Category"){
+                    if(categories.text.isEmpty()){
                         error1.visibility= View.VISIBLE
 //                        option.setBackgroundResource(R.drawable.edittexterror)
                     }else{
@@ -84,8 +62,7 @@ class EditPostFragment : Fragment() {
 
                     }
                 })
-            }
-        }
+
 
         return view
 

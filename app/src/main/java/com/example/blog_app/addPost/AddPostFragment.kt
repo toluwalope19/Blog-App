@@ -1,29 +1,37 @@
 package com.example.blog_app.addPost
 
 import android.R.*
+import android.app.AlertDialog
+import android.content.ContentResolver
 import android.content.Context
+import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.ImageDecoder
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.EditText
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
+import androidx.databinding.BindingAdapter
+import com.bumptech.glide.Glide
 
 import com.example.blog_app.R
 import kotlinx.android.synthetic.main.add_post_fragment.*
+import java.io.IOException
 import android.widget.ArrayAdapter as ArrayAdapter
 
 class AddPostFragment : Fragment() {
 
-    lateinit var option: Spinner
+    private var img_Btn: Button? = null
+    private var imageview: ImageView? = null
+    private val GALLERY = 1
+    private val CAMERA = 2
 
-    lateinit var edit: EditText
 
     companion object {
         fun newInstance() = AddPostFragment()
@@ -35,39 +43,46 @@ class AddPostFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         val view = inflater.inflate(R.layout.add_post_fragment, container, false)
-        val spinner = view.findViewById(R.id.spinner) as Spinner
+        val imgBtn =view.findViewById<Button>(R.id.img_Btn)
+        val imageView = view.findViewById<ImageView>(R.id.addImage)
         val edit = view.findViewById<EditText>(R.id.post)
+        var categories = view.findViewById<EditText>(R.id.addCategory)
         val error1 =view.findViewById<TextView>(R.id.error1)
 
-        option = spinner
 
-        val categories = arrayListOf("Choose Category", "Sport", "News", "Entertainment", "Fashion", "Travel")
-        option.adapter = ArrayAdapter<String>(
-            requireActivity(),
-            layout.simple_list_item_1,
-            categories
-        )
 
-        option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(parent: AdapterView<*>?) {
 
-            }
+         fun showPictureDialog() {
+            val pictureDialog = AlertDialog.Builder(context)
+            pictureDialog.setTitle("Select Action")
+            val pictureDialogItems = arrayOf("Select photo from gallery", "Capture photo from camera")
+            pictureDialog.setItems(pictureDialogItems
+            ) { dialog, which ->
+                when (which) {
+                    0 -> {
+                        val galleryIntent = Intent(Intent.ACTION_PICK,
+                            MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
 
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-
-                if(categories.get(position)!="Choose Category"){
-                    error1.visibility= View.GONE
-                    option.setBackgroundResource(R.drawable.edittext)
+                        startActivityForResult(galleryIntent, GALLERY)
+                    }
+                    1 -> {
+                        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                        startActivityForResult(intent, CAMERA)
+                    }
                 }
+            }
+            pictureDialog.show()
+        }
+        imgBtn.setOnClickListener { showPictureDialog() }
+
+
+
+
                 addPost.setOnClickListener{ view ->
 
-                    if(categories.get(position)=="Choose Category"){
+                    if(categories.text.isEmpty()){
                         error1.visibility= View.VISIBLE
 //                        option.setBackgroundResource(R.drawable.edittexterror)
                     }else{
@@ -93,8 +108,6 @@ class AddPostFragment : Fragment() {
 
                     }
                 })
-            }
-        }
 
         return view
 
@@ -104,6 +117,37 @@ class AddPostFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(AddPostViewModel::class.java)
         // TODO: Use the ViewModel
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+
+        if (requestCode == GALLERY)
+        {
+            if (data != null)
+            {
+
+                try
+                {
+                    val contentURI = data!!.data
+                    Glide.with(context!!).load(contentURI).into(imageview!!)
+                    imageview!!.setImageURI(contentURI)
+                    Toast.makeText(context, "Image Saved!", Toast.LENGTH_SHORT).show()
+                }
+                catch (e: IOException) {
+                    e.printStackTrace()
+                    Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+        else if (requestCode == CAMERA)
+        {
+            val thumbnail = data!!.extras!!.get("data") as Bitmap
+            imageview!!.setImageBitmap(thumbnail)
+            imageview!!.rotation = 90f
+            Toast.makeText(context, "Image Saved!", Toast.LENGTH_SHORT).show()
+        }
     }
 
 }

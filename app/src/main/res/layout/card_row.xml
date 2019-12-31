@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="com.bumptech.glide.Glide"/>
+        <variable
+            name="posts"
+            type="com.example.blog_app.model.Post" />
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
     android:layout_marginTop="@dimen/activity_vertical_margin"
     android:layout_height="wrap_content">
@@ -15,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/javascipt"
+            app:src ="@{posts.image}"
             android:contentDescription="@string/category"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -24,7 +33,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/category"
+            android:text="@{posts.category}"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -40,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
             android:fontFamily="@font/opensans_semibold"
-            android:text="@string/title"
+            android:text="@{posts.title}"
             android:textColor="@color/white"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -49,3 +58,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
+</layout>
