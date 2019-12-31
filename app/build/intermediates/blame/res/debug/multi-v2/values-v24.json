@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Ayodele\\BlogApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ayodele\\.gradle\\caches\\transforms-2\\files-2.1\\2444e4ac8bf5e41fc0222e63298b7bae\\media-1.0.0\\res\\values-v24\\values-v24.xml",
