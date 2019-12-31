@@ -11,15 +11,6 @@ import com.example.blog_app.model.PostRepository
 class FavouritesViewModel(application: Application) : AndroidViewModel(application) {
 
 
-    private val postRepository =PostRepository.getRepository(application)
 
-
-    fun getPosts(context: Context): LiveData<List<Post>> {
-        return postRepository.getPosts(context)
-    }
-
-    fun updatePosts(post: Post){
-        return postRepository.updatePos(post)
-    }
 
 }
