@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,9 @@ import java.lang.Object;
 public abstract class AddPostFragmentBinding extends ViewDataBinding {
   @NonNull
   public final EditText addCategory;
+
+  @NonNull
+  public final ImageView addImage;
 
   @NonNull
   public final Button addPost;
@@ -40,10 +44,11 @@ public abstract class AddPostFragmentBinding extends ViewDataBinding {
   protected Post mPosts;
 
   protected AddPostFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      EditText addCategory, Button addPost, EditText addPostTitle, TextView error1, Button imgBtn,
-      EditText post) {
+      EditText addCategory, ImageView addImage, Button addPost, EditText addPostTitle,
+      TextView error1, Button imgBtn, EditText post) {
     super(_bindingComponent, _root, _localFieldCount);
     this.addCategory = addCategory;
+    this.addImage = addImage;
     this.addPost = addPost;
     this.addPostTitle = addPostTitle;
     this.error1 = error1;

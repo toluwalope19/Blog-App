@@ -2,21 +2,32 @@ package com.example.blog_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
+import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.blog_app.R.id.*
 import com.example.blog_app.Home.HomeFragment
 import com.example.blog_app.addPost.AddPostFragment
-import com.example.blog_app.favorites.FavouritesFragment
+
+import com.example.blog_app.model.Post
 import com.example.blog_app.profile.ProfileFragment
-import com.example.blog_app.search.SearchFragment
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
-
-    lateinit var bottomNavigationView : BottomNavigationView
+    lateinit var navController: NavController
+    lateinit var appBarConfiguration: AppBarConfiguration
 
 
 
@@ -25,62 +36,28 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val fragmentManager = supportFragmentManager.beginTransaction()
 
-//        fragmentManager.add(, HomeFragment.newInstance(), "home fragment").commit()
-        fragmentManager.add(R.id.Fragment,HomeFragment.newInstance(),"home fragment").commit()
+        navController = Navigation.findNavController(this,
+            R.id.Fragment1
+        )
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setSupportActionBar(toolbar)
 
-        bottomNavigationView.selectedItemId = R.id.navigation_home
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(this)
-
+        setupActionBarWithNavController(navController)
 
     }
 
-    var home =  HomeFragment()
-    var favourites = FavouritesFragment()
-    var addPost = AddPostFragment()
-    var search = SearchFragment()
-    var profile = ProfileFragment()
 
 
-    override fun onNavigationItemSelected(p0: MenuItem): Boolean {
-
-        when (p0.getItemId()){
-            navigation_home ->{
-                getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.Fragment, home).commit()
-                return true
-            }
-            navigation_favourites ->{
-                getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.Fragment, favourites).commit()
-                return true
-            }
-            navigation_post ->{
-                getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.Fragment, addPost).commit()
-                return true
-            }
-            navigation_search->{
-                getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.Fragment, search).commit()
-                return true
-            }
-            navigation_profile ->{
-                getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.Fragment, profile).commit()
-                return true
-            }
-        }
-
-        return true
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
+
+
+
+
+
 }

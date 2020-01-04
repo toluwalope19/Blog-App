@@ -4,6 +4,9 @@ package com.example.blog_app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
@@ -15,11 +18,41 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class HomePostRowBinding extends ViewDataBinding {
+  @NonNull
+  public final ImageView comment;
+
+  @NonNull
+  public final ImageView like;
+
+  @NonNull
+  public final LinearLayout linear1;
+
+  @NonNull
+  public final ImageView menu;
+
+  @NonNull
+  public final TextView showPostHomeCategory;
+
+  @NonNull
+  public final ImageView showPostHomeImage;
+
+  @NonNull
+  public final TextView showPostHomeTitle;
+
   @Bindable
   protected Post mPosts;
 
-  protected HomePostRowBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  protected HomePostRowBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      ImageView comment, ImageView like, LinearLayout linear1, ImageView menu,
+      TextView showPostHomeCategory, ImageView showPostHomeImage, TextView showPostHomeTitle) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.comment = comment;
+    this.like = like;
+    this.linear1 = linear1;
+    this.menu = menu;
+    this.showPostHomeCategory = showPostHomeCategory;
+    this.showPostHomeImage = showPostHomeImage;
+    this.showPostHomeTitle = showPostHomeTitle;
   }
 
   public abstract void setPosts(@Nullable Post posts);

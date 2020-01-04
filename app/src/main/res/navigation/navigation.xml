@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.blog_app.Home.HomeFragment"
+        android:label="Latest Stories" >
+        <action
+            android:id="@+id/action_homeFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_postPagerDetailFragment"
+            app:destination="@id/postPagerDetailFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addPostFragment2"
+            app:destination="@id/addPostFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="post"
+            app:argType="com.example.blog_app.model.Post"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostFragment"
+        android:name="com.example.blog_app.addPost.AddPostFragment"
+        android:label="AddPostFragment" >
+        <argument
+            android:name="post"
+            app:argType="com.example.blog_app.model.Post"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.example.blog_app.postDetail.PostDetailFragment"
+        android:label="PostDetailFragment" >
+        <argument
+            android:name="post"
+            app:argType="com.example.blog_app.model.Post" />
+    </fragment>
+    <fragment
+        android:id="@+id/postPagerDetailFragment"
+        android:name="com.example.blog_app.PostPagerDetailFragment"
+        android:label="PostPagerDetailFragment" >
+        <argument
+            android:name="post"
+            app:argType="com.example.blog_app.model.Post" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.blog_app.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="com.example.blog_app.editPost.EditPostFragment"
+        android:label="EditPostFragment" >
+        <argument
+            android:name="post"
+            app:argType="com.example.blog_app.model.Post"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_editPostFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

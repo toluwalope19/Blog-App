@@ -9,22 +9,31 @@
         type="com.example.blog_app.model.Post" />
 </data>
 <LinearLayout
-    android:orientation="horizontal"
-    android:weightSum="3"
+    android:id="@+id/linear1"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:elevation="4dp"
     android:background="@drawable/post_background"
-    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="8dp"
     android:layout_marginTop="@dimen/activity_vertical_margin"
-    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="4dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="132dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+
 
     <ImageView
+        android:id="@+id/showPostHomeImage"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:scaleType="fitXY"
-        android:src="@drawable/images"
-        app:src = "@{posts.image}"
-        android:layout_weight="1"/>
+        android:src="@{posts.image}"
+        android:layout_weight="2"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,19 +44,71 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/showPostHomeCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:tooltipText="@string/category"
             android:text="@{posts.category}"
             android:textAllCaps="true"
           />
         <TextView
+            android:id="@+id/showPostHomeTitle"
             android:layout_width="wrap_content"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_height="wrap_content"
             android:text="@{posts.title}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@{posts.post}"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:tint="@color/second_text"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_black_24dp" />
+            <ImageView
+                android:id="@+id/like"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="bottom"
+                android:tint="@color/second_text"
+                android:layout_width="24dp"
+                android:layout_weight="1"
+                android:layout_height="24dp"
+                android:src="@drawable/clap" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:background="@color/white"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:tint="@color/second_text"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_more_vert_black_24dp" />
 
     </LinearLayout>
 
 
 </LinearLayout>
+
+
 </layout>

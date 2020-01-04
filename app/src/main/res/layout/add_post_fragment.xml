@@ -3,7 +3,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:bind="http://schemas.android.com/apk/res-auto">
-    <data>
+    <data class="AddPostFragmentBinding">
         <variable
             name="posts"
             type="com.example.blog_app.model.Post" />
@@ -68,6 +68,7 @@
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_width="match_parent"
+        android:text = "@={posts.post}"
         android:hint="@string/writePost"
         android:textColorHint="@color/second_text"
         android:layout_gravity="center"
@@ -86,11 +87,12 @@
          />
 
             <ImageView
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:scaleType="fitXY"
-                android:src ="@={posts.image}"
+                android:visibility="gone"
+                android:src ="@{posts.image}"
                 android:tint="@color/second_text"
                 android:id="@+id/addImage"/>
     <Button

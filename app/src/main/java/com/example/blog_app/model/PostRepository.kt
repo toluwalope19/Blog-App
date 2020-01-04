@@ -25,7 +25,7 @@ class PostRepository private constructor(application: Application){
     init {
         val database = Room.databaseBuilder(application.applicationContext,
             PostDB::class.java, "Posts.db")
-            .build()
+            .allowMainThreadQueries().build()
         postLocalDataSource = PostLocalDataSource(database.PostDao())
     }
 

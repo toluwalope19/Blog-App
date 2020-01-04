@@ -1,260 +1,286 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe58d87a8b19b8812635b179f2e7f0d2\databinding-adapters-3.5.3\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\549c9c617b0dded8ccd25338c7272a25\databinding-runtime-3.5.3\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0fa4c4548601ba06a86e04c314355364\navigation-ui-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9a50dfca2c971a9c55db6b022861290a\jetified-navigation-ui-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\946093075d78eb9f74f58a48d61f96ab\material-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\93bc303e0edf41378a70a682ebb74605\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0588f1680d8c002d349b6281f1a6043e\core-ktx-1.1.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\390b0d08236964ae6f4d9941718a969c\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b861c0bef19b030d1651d99937bed00a\fragment-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity-ktx:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f6058528b5b8e3ff9adcd87479369978\activity-ktx-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7af837f6ac8752511ef417229ce99259\lifecycle-viewmodel-ktx-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\828ffb5a3e3c28d66d90de8cb1c5d081\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d9fd0f9d2413d1485b690ac340fd0bdd\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:17:1-30:12
-MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\965e2b6117b0f7cf2a17912c984310c8\circleimageview-3.0.1\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\274acdc0d817a44b6077111eeefc26ce\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6af80f241fc38d7dc85309aa19b9ef3\lifecycle-extensions-2.1.0\AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\98a37dfc43b9f1fdef471823251f2ba2\navigation-fragment-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bc16c119e93617f7f4bd3188565e6df6\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\24dca681329175a03d53e389a45c201a\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cc49b32293b6ca9e924e3f5ec7f94c93\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4681ba69b992d1066d0f86ff962fa316\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3c86d6f3154e362e2ac7bcaee0a8b231\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2444e4ac8bf5e41fc0222e63298b7bae\media-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\158a0cf1cb206b58a5f81ed4124aede8\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\29a6593c42d1f7975c962d8d95b5ed40\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d820099421ea00e96b2625ea6c19c4c\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b94bc58faef6e323463fbaaaa79e8342\navigation-runtime-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5508ee9bf0d0e7c9c28883e3c4e48373\navigation-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\07b17ca9bfc2ccf3f9284ac94fb47df2\activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\50dbf37e10b7bd5c1bf2c0fff2d83243\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0aa511544b3ee110c63a1446fbe2c5e4\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d87973ebeeaea2fc000b73c69c9f5f39\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1138a1941bf86b99853b89ce79c7fc71\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e7c663d08d0478d87f07969d53991dd8\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\164e16dd8741398891092fcad60e6640\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe76cbed9b9df926e6dd828b9c57ebf7\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\de34260a4a02265cf87822c3c6dce9f5\transition-1.0.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e7bcd2f830620bc823084480cbd6e9e\navigation-common-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d575b7aa5ccc7e0b92e36ba02edd18b1\navigation-common-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4f67ff4ac0fdb67eb669010cec74a33a\lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1dab23c110954a3fdc6ae220778a8acb\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2958bfeff871706e37e023803895bb19\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\12e3091321384669e8f586318ef1d685\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9463193fd7a037cfcfcc8d128eb22aa2\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dfb1f22e942c156be6987681931b441d\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0f4501d13c165054fa137530cafc3fd1\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7034d30b19b127a19660862334887356\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5121bdb578841b1f04d55a3eccda21e9\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fa301fe4f1b3537f3a6689e0543f6dc4\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7c6636ec62ad2c4f482a80212e8dde81\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f6af1f60f41a53f5595450555fe2a9f8\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b0af4bd25e8bd0125497169244a78c79\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\225c82d8c731985fb415caed199cb7eb\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b49a3cb0a0186e54d18812f26e6e4ce2\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c9eb4efc2103a05ad6203fd4d78919fe\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a7ac5d9832a55e02f327cca94b1b2adb\print-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2d3b2cf01249d634139514376b9766a4\databinding-adapters-3.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6ff3251196312992bd84e77ded988b39\databinding-runtime-3.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6a427cbd6a61438d37c654c4d5fc71d8\navigation-ui-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe1f0858f76434da1558ff3342193809\jetified-navigation-ui-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0ef96104ad3c084abbcf1cbbd771bfd0\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cd4145b995c13b1253e923c00746fb38\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3e84241f3f0148b6fbc8062f8c5470a4\core-ktx-1.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\688f09cfd826e69f15c64ceef2836db2\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4347bca6d000110dd28f8a5cfbd5127c\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5b420dfe80d5cd130fb055ef411fbdc2\fragment-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\77d4b6d00133ac684d03b9deeda20352\activity-ktx-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8c49165724b732be1c58c30252037617\lifecycle-viewmodel-ktx-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\210e030714d3d446cb237ffff8e45e35\glide-4.10.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a8a22a3c68d35e609677600fe7c2ae9d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:17:1-30:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8291c848222014cd5722a668c97eee36\circleimageview-3.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a9870618826e7566473170f5369696ad\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f512a308b4cb9f82a02ee1d676f5ff23\lifecycle-extensions-2.1.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\98d8c53f3730cc57e624e1405eb144ab\navigation-fragment-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\26a30f9f5cd672764a610ec17990c507\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e870f82bb412af108d848e1c78c9e8f0\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6eac4f9700ce8ebce2da357d41b3f167\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f10932fbdc3bbc4a0e2c2079434fa376\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0430a3a18610e38fc3c204b5ddbbd485\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9f9e4aae3f5b3eb471e42ff2558f31f7\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4cb28f4e9a548a35c18c1ab50424620a\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\af205d27141118b3096d3b3f27a9440e\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c02ad21e51076c29b3634a86177d103a\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f68b752f17789d02e822922029a780f9\navigation-runtime-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\ef5715860623c4bae093abf95d6cb0e5\navigation-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9816e2ec81fd2858c56afcf08cb89264\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9ac6a76084b77f95688524ab49fbdcfd\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\eee44e5e25028b10771f03de89b64fbe\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1c941532ac08f1b57db5116d465e1c72\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b0a72b9aca52e830c90dc9edc69e1af0\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dc1f9285913bbe6d4ae93adc834c06f0\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e91a74339b4c7165902854f49fbbc751\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3f20e1751f8d119171f5cb2af1972dc7\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4c48588ff572e796abe807cb5c3a3916\transition-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6abed3640d29b8a690df90709cb11016\navigation-common-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\45418f27343ef98576280dc7ba6e58e1\navigation-common-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c8fb16d49138c23210aad3e2ec19fb3a\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\66dcdcace7bacfa02e54e3a294930508\lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\21fb3c6c0f9ea4b409749ad66e9172e3\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6dd4f4dc054f0d34330f434f58536b4\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\ed6fcce5b9231a3183987eebc707e358\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\47c6c4baef1bd6610665d62ba3e34aa0\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fabbfceb3e065402bf31f908d998bf1b\gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0e6550e61320cdfdabd220a51ffb49a0\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\61c7b0ea7a1181f5154cec74a53286c5\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d4a2a7e293da67d941ae2a2ccbb2844d\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5be5246e86d28dfad55c5324202fa71f\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cd3dc6c168085c0fc4bd9cbf6073625d\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\efbd808e6d999f4319ca16cd44b5833b\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\efcb9f708c0207c81a2dd0cfa9fea73d\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1a89b1e64c5e0f271f0bec5b8ce11b6b\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\581d14027cf617da74d14a216d560b55\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\be7b8bb0f4c80a002aa31d7e2125ae65\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\87448bd231e82689c523e2144b195f9e\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0997ae450be89358c49f3430f78f0ea2\print-1.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:5:5-19:19
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\946093075d78eb9f74f58a48d61f96ab\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\946093075d78eb9f74f58a48d61f96ab\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\828ffb5a3e3c28d66d90de8cb1c5d081\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\828ffb5a3e3c28d66d90de8cb1c5d081\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
-MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:24:5-28:19
-MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:24:5-28:19
-MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\965e2b6117b0f7cf2a17912c984310c8\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\965e2b6117b0f7cf2a17912c984310c8\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6af80f241fc38d7dc85309aa19b9ef3\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6af80f241fc38d7dc85309aa19b9ef3\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2958bfeff871706e37e023803895bb19\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2958bfeff871706e37e023803895bb19\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9463193fd7a037cfcfcc8d128eb22aa2\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9463193fd7a037cfcfcc8d128eb22aa2\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:9:5-23:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0ef96104ad3c084abbcf1cbbd771bfd0\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0ef96104ad3c084abbcf1cbbd771bfd0\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\688f09cfd826e69f15c64ceef2836db2\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\688f09cfd826e69f15c64ceef2836db2\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\210e030714d3d446cb237ffff8e45e35\glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\210e030714d3d446cb237ffff8e45e35\glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:24:5-28:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8291c848222014cd5722a668c97eee36\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8291c848222014cd5722a668c97eee36\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f512a308b4cb9f82a02ee1d676f5ff23\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f512a308b4cb9f82a02ee1d676f5ff23\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c8fb16d49138c23210aad3e2ec19fb3a\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c8fb16d49138c23210aad3e2ec19fb3a\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6dd4f4dc054f0d34330f434f58536b4\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6dd4f4dc054f0d34330f434f58536b4\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fabbfceb3e065402bf31f908d998bf1b\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fabbfceb3e065402bf31f908d998bf1b\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c8fb16d49138c23210aad3e2ec19fb3a\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:15:9-40
 activity#com.example.blog_app.MainActivity
-ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:theme
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:48-91
 	android:name
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe58d87a8b19b8812635b179f2e7f0d2\databinding-adapters-3.5.3\AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe58d87a8b19b8812635b179f2e7f0d2\databinding-adapters-3.5.3\AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\549c9c617b0dded8ccd25338c7272a25\databinding-runtime-3.5.3\AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\549c9c617b0dded8ccd25338c7272a25\databinding-runtime-3.5.3\AndroidManifest.xml:22:5-44
-MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0fa4c4548601ba06a86e04c314355364\navigation-ui-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0fa4c4548601ba06a86e04c314355364\navigation-ui-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9a50dfca2c971a9c55db6b022861290a\jetified-navigation-ui-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9a50dfca2c971a9c55db6b022861290a\jetified-navigation-ui-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\946093075d78eb9f74f58a48d61f96ab\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\946093075d78eb9f74f58a48d61f96ab\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\93bc303e0edf41378a70a682ebb74605\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\93bc303e0edf41378a70a682ebb74605\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0588f1680d8c002d349b6281f1a6043e\core-ktx-1.1.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0588f1680d8c002d349b6281f1a6043e\core-ktx-1.1.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\140e197d83343f156dc84b9dfd575292\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\390b0d08236964ae6f4d9941718a969c\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\390b0d08236964ae6f4d9941718a969c\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b861c0bef19b030d1651d99937bed00a\fragment-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b861c0bef19b030d1651d99937bed00a\fragment-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f6058528b5b8e3ff9adcd87479369978\activity-ktx-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f6058528b5b8e3ff9adcd87479369978\activity-ktx-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7af837f6ac8752511ef417229ce99259\lifecycle-viewmodel-ktx-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7af837f6ac8752511ef417229ce99259\lifecycle-viewmodel-ktx-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\828ffb5a3e3c28d66d90de8cb1c5d081\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\828ffb5a3e3c28d66d90de8cb1c5d081\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d9fd0f9d2413d1485b690ac340fd0bdd\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d9fd0f9d2413d1485b690ac340fd0bdd\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
-MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\965e2b6117b0f7cf2a17912c984310c8\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\965e2b6117b0f7cf2a17912c984310c8\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\274acdc0d817a44b6077111eeefc26ce\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\274acdc0d817a44b6077111eeefc26ce\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6af80f241fc38d7dc85309aa19b9ef3\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6af80f241fc38d7dc85309aa19b9ef3\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\98a37dfc43b9f1fdef471823251f2ba2\navigation-fragment-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\98a37dfc43b9f1fdef471823251f2ba2\navigation-fragment-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bc16c119e93617f7f4bd3188565e6df6\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bc16c119e93617f7f4bd3188565e6df6\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\24dca681329175a03d53e389a45c201a\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\24dca681329175a03d53e389a45c201a\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cc49b32293b6ca9e924e3f5ec7f94c93\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cc49b32293b6ca9e924e3f5ec7f94c93\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4681ba69b992d1066d0f86ff962fa316\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4681ba69b992d1066d0f86ff962fa316\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3c86d6f3154e362e2ac7bcaee0a8b231\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3c86d6f3154e362e2ac7bcaee0a8b231\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2444e4ac8bf5e41fc0222e63298b7bae\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2444e4ac8bf5e41fc0222e63298b7bae\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\158a0cf1cb206b58a5f81ed4124aede8\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\158a0cf1cb206b58a5f81ed4124aede8\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\29a6593c42d1f7975c962d8d95b5ed40\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\29a6593c42d1f7975c962d8d95b5ed40\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d820099421ea00e96b2625ea6c19c4c\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d820099421ea00e96b2625ea6c19c4c\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b94bc58faef6e323463fbaaaa79e8342\navigation-runtime-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b94bc58faef6e323463fbaaaa79e8342\navigation-runtime-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5508ee9bf0d0e7c9c28883e3c4e48373\navigation-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5508ee9bf0d0e7c9c28883e3c4e48373\navigation-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\07b17ca9bfc2ccf3f9284ac94fb47df2\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\07b17ca9bfc2ccf3f9284ac94fb47df2\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\50dbf37e10b7bd5c1bf2c0fff2d83243\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\50dbf37e10b7bd5c1bf2c0fff2d83243\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0aa511544b3ee110c63a1446fbe2c5e4\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0aa511544b3ee110c63a1446fbe2c5e4\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d87973ebeeaea2fc000b73c69c9f5f39\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d87973ebeeaea2fc000b73c69c9f5f39\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1138a1941bf86b99853b89ce79c7fc71\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1138a1941bf86b99853b89ce79c7fc71\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e7c663d08d0478d87f07969d53991dd8\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e7c663d08d0478d87f07969d53991dd8\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\164e16dd8741398891092fcad60e6640\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\164e16dd8741398891092fcad60e6640\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe76cbed9b9df926e6dd828b9c57ebf7\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe76cbed9b9df926e6dd828b9c57ebf7\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\de34260a4a02265cf87822c3c6dce9f5\transition-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\de34260a4a02265cf87822c3c6dce9f5\transition-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e7bcd2f830620bc823084480cbd6e9e\navigation-common-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e7bcd2f830620bc823084480cbd6e9e\navigation-common-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d575b7aa5ccc7e0b92e36ba02edd18b1\navigation-common-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d575b7aa5ccc7e0b92e36ba02edd18b1\navigation-common-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4f67ff4ac0fdb67eb669010cec74a33a\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4f67ff4ac0fdb67eb669010cec74a33a\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1dab23c110954a3fdc6ae220778a8acb\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1dab23c110954a3fdc6ae220778a8acb\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2958bfeff871706e37e023803895bb19\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2958bfeff871706e37e023803895bb19\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\12e3091321384669e8f586318ef1d685\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\12e3091321384669e8f586318ef1d685\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9463193fd7a037cfcfcc8d128eb22aa2\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9463193fd7a037cfcfcc8d128eb22aa2\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dfb1f22e942c156be6987681931b441d\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dfb1f22e942c156be6987681931b441d\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0f4501d13c165054fa137530cafc3fd1\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0f4501d13c165054fa137530cafc3fd1\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7034d30b19b127a19660862334887356\sqlite-2.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7034d30b19b127a19660862334887356\sqlite-2.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5121bdb578841b1f04d55a3eccda21e9\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5121bdb578841b1f04d55a3eccda21e9\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fa301fe4f1b3537f3a6689e0543f6dc4\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fa301fe4f1b3537f3a6689e0543f6dc4\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7c6636ec62ad2c4f482a80212e8dde81\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\7c6636ec62ad2c4f482a80212e8dde81\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f6af1f60f41a53f5595450555fe2a9f8\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f6af1f60f41a53f5595450555fe2a9f8\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b0af4bd25e8bd0125497169244a78c79\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b0af4bd25e8bd0125497169244a78c79\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\225c82d8c731985fb415caed199cb7eb\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\225c82d8c731985fb415caed199cb7eb\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b49a3cb0a0186e54d18812f26e6e4ce2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b49a3cb0a0186e54d18812f26e6e4ce2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c9eb4efc2103a05ad6203fd4d78919fe\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c9eb4efc2103a05ad6203fd4d78919fe\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a7ac5d9832a55e02f327cca94b1b2adb\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a7ac5d9832a55e02f327cca94b1b2adb\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2d3b2cf01249d634139514376b9766a4\databinding-adapters-3.5.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2d3b2cf01249d634139514376b9766a4\databinding-adapters-3.5.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6ff3251196312992bd84e77ded988b39\databinding-runtime-3.5.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6ff3251196312992bd84e77ded988b39\databinding-runtime-3.5.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6a427cbd6a61438d37c654c4d5fc71d8\navigation-ui-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6a427cbd6a61438d37c654c4d5fc71d8\navigation-ui-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe1f0858f76434da1558ff3342193809\jetified-navigation-ui-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fe1f0858f76434da1558ff3342193809\jetified-navigation-ui-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0ef96104ad3c084abbcf1cbbd771bfd0\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0ef96104ad3c084abbcf1cbbd771bfd0\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cd4145b995c13b1253e923c00746fb38\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cd4145b995c13b1253e923c00746fb38\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3e84241f3f0148b6fbc8062f8c5470a4\core-ktx-1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3e84241f3f0148b6fbc8062f8c5470a4\core-ktx-1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\688f09cfd826e69f15c64ceef2836db2\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\688f09cfd826e69f15c64ceef2836db2\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4347bca6d000110dd28f8a5cfbd5127c\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4347bca6d000110dd28f8a5cfbd5127c\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5b420dfe80d5cd130fb055ef411fbdc2\fragment-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5b420dfe80d5cd130fb055ef411fbdc2\fragment-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\77d4b6d00133ac684d03b9deeda20352\activity-ktx-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\77d4b6d00133ac684d03b9deeda20352\activity-ktx-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8c49165724b732be1c58c30252037617\lifecycle-viewmodel-ktx-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8c49165724b732be1c58c30252037617\lifecycle-viewmodel-ktx-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\210e030714d3d446cb237ffff8e45e35\glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\210e030714d3d446cb237ffff8e45e35\glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a8a22a3c68d35e609677600fe7c2ae9d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a8a22a3c68d35e609677600fe7c2ae9d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8291c848222014cd5722a668c97eee36\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8291c848222014cd5722a668c97eee36\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a9870618826e7566473170f5369696ad\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\a9870618826e7566473170f5369696ad\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f512a308b4cb9f82a02ee1d676f5ff23\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f512a308b4cb9f82a02ee1d676f5ff23\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\98d8c53f3730cc57e624e1405eb144ab\navigation-fragment-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\98d8c53f3730cc57e624e1405eb144ab\navigation-fragment-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\26a30f9f5cd672764a610ec17990c507\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\26a30f9f5cd672764a610ec17990c507\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e870f82bb412af108d848e1c78c9e8f0\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e870f82bb412af108d848e1c78c9e8f0\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6eac4f9700ce8ebce2da357d41b3f167\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6eac4f9700ce8ebce2da357d41b3f167\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f10932fbdc3bbc4a0e2c2079434fa376\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f10932fbdc3bbc4a0e2c2079434fa376\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0430a3a18610e38fc3c204b5ddbbd485\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0430a3a18610e38fc3c204b5ddbbd485\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9f9e4aae3f5b3eb471e42ff2558f31f7\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9f9e4aae3f5b3eb471e42ff2558f31f7\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4cb28f4e9a548a35c18c1ab50424620a\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4cb28f4e9a548a35c18c1ab50424620a\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\af205d27141118b3096d3b3f27a9440e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\af205d27141118b3096d3b3f27a9440e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c02ad21e51076c29b3634a86177d103a\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c02ad21e51076c29b3634a86177d103a\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f68b752f17789d02e822922029a780f9\navigation-runtime-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f68b752f17789d02e822922029a780f9\navigation-runtime-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\ef5715860623c4bae093abf95d6cb0e5\navigation-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\ef5715860623c4bae093abf95d6cb0e5\navigation-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9816e2ec81fd2858c56afcf08cb89264\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9816e2ec81fd2858c56afcf08cb89264\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9ac6a76084b77f95688524ab49fbdcfd\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9ac6a76084b77f95688524ab49fbdcfd\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\eee44e5e25028b10771f03de89b64fbe\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\eee44e5e25028b10771f03de89b64fbe\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1c941532ac08f1b57db5116d465e1c72\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1c941532ac08f1b57db5116d465e1c72\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b0a72b9aca52e830c90dc9edc69e1af0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\b0a72b9aca52e830c90dc9edc69e1af0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dc1f9285913bbe6d4ae93adc834c06f0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dc1f9285913bbe6d4ae93adc834c06f0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e91a74339b4c7165902854f49fbbc751\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\e91a74339b4c7165902854f49fbbc751\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3f20e1751f8d119171f5cb2af1972dc7\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3f20e1751f8d119171f5cb2af1972dc7\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4c48588ff572e796abe807cb5c3a3916\transition-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\4c48588ff572e796abe807cb5c3a3916\transition-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6abed3640d29b8a690df90709cb11016\navigation-common-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\6abed3640d29b8a690df90709cb11016\navigation-common-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\45418f27343ef98576280dc7ba6e58e1\navigation-common-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\45418f27343ef98576280dc7ba6e58e1\navigation-common-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c8fb16d49138c23210aad3e2ec19fb3a\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c8fb16d49138c23210aad3e2ec19fb3a\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\66dcdcace7bacfa02e54e3a294930508\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\66dcdcace7bacfa02e54e3a294930508\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\21fb3c6c0f9ea4b409749ad66e9172e3\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\21fb3c6c0f9ea4b409749ad66e9172e3\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6dd4f4dc054f0d34330f434f58536b4\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d6dd4f4dc054f0d34330f434f58536b4\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\ed6fcce5b9231a3183987eebc707e358\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\ed6fcce5b9231a3183987eebc707e358\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\47c6c4baef1bd6610665d62ba3e34aa0\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\47c6c4baef1bd6610665d62ba3e34aa0\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fabbfceb3e065402bf31f908d998bf1b\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\fabbfceb3e065402bf31f908d998bf1b\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0e6550e61320cdfdabd220a51ffb49a0\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0e6550e61320cdfdabd220a51ffb49a0\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\61c7b0ea7a1181f5154cec74a53286c5\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\61c7b0ea7a1181f5154cec74a53286c5\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d4a2a7e293da67d941ae2a2ccbb2844d\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d4a2a7e293da67d941ae2a2ccbb2844d\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5be5246e86d28dfad55c5324202fa71f\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5be5246e86d28dfad55c5324202fa71f\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cd3dc6c168085c0fc4bd9cbf6073625d\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\cd3dc6c168085c0fc4bd9cbf6073625d\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\efbd808e6d999f4319ca16cd44b5833b\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\efbd808e6d999f4319ca16cd44b5833b\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\efcb9f708c0207c81a2dd0cfa9fea73d\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\efcb9f708c0207c81a2dd0cfa9fea73d\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1a89b1e64c5e0f271f0bec5b8ce11b6b\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\1a89b1e64c5e0f271f0bec5b8ce11b6b\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\581d14027cf617da74d14a216d560b55\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\581d14027cf617da74d14a216d560b55\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\be7b8bb0f4c80a002aa31d7e2125ae65\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\be7b8bb0f4c80a002aa31d7e2125ae65\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\87448bd231e82689c523e2144b195f9e\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\87448bd231e82689c523e2144b195f9e\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0997ae450be89358c49f3430f78f0ea2\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0997ae450be89358c49f3430f78f0ea2\print-1.0.0\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -266,18 +292,26 @@ INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:25:9-27:40
+ADDED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:27:13-37
+		ADDED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:26:13-74
-provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+		ADDED from [androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79

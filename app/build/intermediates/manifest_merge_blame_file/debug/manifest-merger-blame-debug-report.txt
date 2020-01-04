@@ -10,55 +10,79 @@
 9        android:targetSdkVersion="29" />
 9-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:5:5-19:19
-12        android:allowBackup="true"
-12-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/AppTheme" >
-19-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:11:9-40
-20        <activity android:name="com.example.blog_app.MainActivity" >
-20-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:9-18:20
-20-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:19-47
-21            <intent-filter>
-21-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:13:13-17:29
-22                <action android:name="android.intent.action.MAIN" />
-22-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:17-69
-22-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:25-66
-23
-24                <category android:name="android.intent.category.LAUNCHER" />
-24-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:17-77
-24-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:27-74
-25            </intent-filter>
-26        </activity>
-27
-28        <service
-28-->[androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:25:9-27:40
-29            android:name="androidx.room.MultiInstanceInvalidationService"
-29-->[androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:26:13-74
-30            android:exported="false" />
-30-->[androidx.room:room-runtime:2.2.2] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3da51d74ec203deb32946c02f5deb766\room-runtime-2.2.2\AndroidManifest.xml:27:13-37
-31
-32        <provider
-32-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-33            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-33-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-34            android:authorities="com.example.blog_app.lifecycle-process"
-34-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-35            android:exported="false"
-35-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-36            android:multiprocess="true" />
-36-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\41b1b78f76167ae9169a5afa46973960\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-37    </application>
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:7:5-65
+13-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:7:22-62
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:22-64
+15
+16    <application
+16-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:9:5-23:19
+17        android:allowBackup="true"
+17-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:10:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c8fb16d49138c23210aad3e2ec19fb3a\core-1.1.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:11:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:13:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:9-35
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity
+25-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:9-22:20
+26            android:name="com.example.blog_app.MainActivity"
+26-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:19-47
+27            android:theme="@style/AppTheme.NoActionBar" >
+27-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:48-91
+28            <intent-filter>
+28-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:17:13-21:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:17-69
+29-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:20:17-77
+31-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:20:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <service
+35-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+36            android:name="androidx.room.MultiInstanceInvalidationService"
+36-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+37            android:exported="false" />
+37-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\8400096f4be653d76929c03fa7b69cd7\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
 38
-39</manifest>
+39        <provider
+39-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+40            android:name="com.squareup.picasso.PicassoProvider"
+40-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+41            android:authorities="com.example.blog_app.com.squareup.picasso"
+41-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+42            android:exported="false" />
+42-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\c41ab9ea9cfc5be76f128c943626d3c8\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+43        <provider
+43-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+44            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+44-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+45            android:authorities="com.example.blog_app.lifecycle-process"
+45-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+46            android:exported="false"
+46-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+47            android:multiprocess="true" />
+47-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\3b61a919539c403c41336c951450aa4a\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+48    </application>
+49
+50</manifest>

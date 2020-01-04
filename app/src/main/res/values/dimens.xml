@@ -19,4 +19,8 @@
     <dimen name="header_padding">16dp</dimen>
     <dimen name="header_image_width">100dp</dimen>
 
+    <dimen name="pageMargin">40dp</dimen>
+    <dimen name="offset">30dp</dimen>
+    <dimen name="pageMarginAndOffset">70dp</dimen>
+
 </resources>

@@ -13,4 +13,7 @@ class EditPostViewModel(application: Application) : AndroidViewModel(application
     fun updatePost(post: Post){
         postRepository.updatePost(post)
     }
+    fun savePost(post: Post){
+        postRepository.savePost(post)
+    }
 }

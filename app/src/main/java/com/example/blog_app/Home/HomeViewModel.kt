@@ -21,4 +21,8 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         return postRepository.updatePost(post)
     }
 
+    fun deletePost(post: Post){
+        return postRepository.deletePost(post)
+    }
+
 }

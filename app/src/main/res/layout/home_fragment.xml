@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    >
-    <data>
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class="FragmentHomeBinding">
         <variable
             name="post"
             type="com.example.blog_app.model.Post" />
     </data>
 
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeFragment">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -18,7 +20,8 @@
     android:paddingEnd="16dp"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Home.HomeFragment">
+   >
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,10 +30,17 @@
         android:textColor="@color/text"
         android:text="@string/interest"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="150dp">
+
   <androidx.viewpager2.widget.ViewPager2
-      android:id="@+id/viewPager2"
+      android:id="@+id/viewPager"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"/>
+      android:layout_height="match_parent"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +63,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/today"
+                android:text="Latest"
                 android:layout_weight="1"
                 android:textSize="@dimen/today"
                 android:fontFamily="@font/opensans_semibold"
@@ -69,10 +79,18 @@
 
         </LinearLayout>
 
-
     </LinearLayout>
-
-
-
 </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:backgroundTint="@color/second_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add" />
+</RelativeLayout>
 </layout>

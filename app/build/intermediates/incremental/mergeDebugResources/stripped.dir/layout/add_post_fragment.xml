@@ -68,6 +68,7 @@
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_width="match_parent"
+        android:tag="binding_3"        
         android:hint="@string/writePost"
         android:textColorHint="@color/second_text"
         android:layout_gravity="center"
@@ -84,6 +85,16 @@
         android:visibility="gone"
         android:textColor="@color/colorAccent"
          />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:tag="binding_4"      
+                android:tint="@color/second_text"
+                android:id="@+id/addImage"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

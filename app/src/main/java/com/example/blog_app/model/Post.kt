@@ -1,6 +1,9 @@
 package com.example.blog_app.model
 
+import android.net.Uri
 import android.os.Parcelable
+import android.widget.ImageView
+import androidx.databinding.BindingAdapter
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -22,5 +25,10 @@ data class Post ( @PrimaryKey(autoGenerate = true)
     var post: String,
 
     @ColumnInfo(name = "Image")
-    var image: Int
+    var image: String
     ): Parcelable
+
+        @BindingAdapter("android:src")
+        fun setImageUri(view: ImageView, imageUri: Uri) {
+            view.setImageURI(imageUri)
+        }

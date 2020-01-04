@@ -4,6 +4,7 @@ package com.example.blog_app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,19 +18,23 @@ import java.lang.Object;
 
 public abstract class CardRowBinding extends ViewDataBinding {
   @NonNull
-  public final TextView textView;
+  public final TextView cardRowCategory;
 
   @NonNull
-  public final TextView textView2;
+  public final ImageView cardRowImage;
+
+  @NonNull
+  public final TextView cardRowTitle;
 
   @Bindable
   protected Post mPosts;
 
   protected CardRowBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView textView, TextView textView2) {
+      TextView cardRowCategory, ImageView cardRowImage, TextView cardRowTitle) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.textView = textView;
-    this.textView2 = textView2;
+    this.cardRowCategory = cardRowCategory;
+    this.cardRowImage = cardRowImage;
+    this.cardRowTitle = cardRowTitle;
   }
 
   public abstract void setPosts(@Nullable Post posts);

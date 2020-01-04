@@ -7,6 +7,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.ImageDecoder
+import android.net.Uri
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.provider.MediaStore
@@ -17,11 +18,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.graphics.drawable.toBitmap
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
+import com.example.blog_app.Home.HomeFragment
 
 import com.example.blog_app.R
+import com.example.blog_app.databinding.AddPostFragmentBinding
+import com.example.blog_app.databinding.AddPostFragmentBindingImpl
+import com.example.blog_app.model.Post
+import com.example.blog_app.postDetail.PostDetailFragment
 import kotlinx.android.synthetic.main.add_post_fragment.*
+import java.io.ByteArrayOutputStream
 import java.io.IOException
 import android.widget.ArrayAdapter as ArrayAdapter
 
@@ -31,6 +39,7 @@ class AddPostFragment : Fragment() {
     private var imageview: ImageView? = null
     private val GALLERY = 1
     private val CAMERA = 2
+    private var imageUriLoader: Uri? = null
 
 
     companion object {
@@ -44,12 +53,12 @@ class AddPostFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val view = inflater.inflate(R.layout.add_post_fragment, container, false)
-        val imgBtn =view.findViewById<Button>(R.id.img_Btn)
-        val imageView = view.findViewById<ImageView>(R.id.addImage)
-        val edit = view.findViewById<EditText>(R.id.post)
-        var categories = view.findViewById<EditText>(R.id.addCategory)
-        val error1 =view.findViewById<TextView>(R.id.error1)
+        val binding = AddPostFragmentBinding.inflate(inflater,container,false)
+        val imgBtn = binding.imgBtn
+        val imageView = binding.addImage
+        val edit = binding.post
+        var categories = binding.addCategory
+        val error1 =binding.error1
 
 
 
@@ -62,8 +71,10 @@ class AddPostFragment : Fragment() {
             ) { dialog, which ->
                 when (which) {
                     0 -> {
-                        val galleryIntent = Intent(Intent.ACTION_PICK,
-                            MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+                        val galleryIntent = Intent(Intent.ACTION_OPEN_DOCUMENT)
+                        galleryIntent.type="image/*"
+                        val mimeTypes = arrayOf("image/jpeg", "image/png")
+                        galleryIntent.putExtra(Intent.EXTRA_MIME_TYPES,mimeTypes)
 
                         startActivityForResult(galleryIntent, GALLERY)
                     }
@@ -80,7 +91,20 @@ class AddPostFragment : Fragment() {
 
 
 
-                addPost.setOnClickListener{ view ->
+                binding.addPost.setOnClickListener{ view ->
+
+                    val title = binding.addPostTitle.text.toString()
+                    val category = binding.addCategory.text.toString()
+                    val body = binding.post.text.toString()
+                    val image = binding.addImage.drawable.toBitmap()
+
+
+                    val capturedPost = Post(0,title,category,body,imageUriLoader.toString())
+
+                    viewModel.savePost(capturedPost)
+
+
+
 
                     if(categories.text.isEmpty()){
                         error1.visibility= View.VISIBLE
@@ -109,7 +133,8 @@ class AddPostFragment : Fragment() {
                     }
                 })
 
-        return view
+        binding.lifecycleOwner = this.viewLifecycleOwner
+        return binding.root
 
     }
 
@@ -123,6 +148,8 @@ class AddPostFragment : Fragment() {
         super.onActivityResult(requestCode, resultCode, data)
 
 
+        val imageView = view?.findViewById<ImageView>(R.id.addImage)
+
         if (requestCode == GALLERY)
         {
             if (data != null)
@@ -131,8 +158,9 @@ class AddPostFragment : Fragment() {
                 try
                 {
                     val contentURI = data!!.data
-                    Glide.with(context!!).load(contentURI).into(imageview!!)
-                    imageview!!.setImageURI(contentURI)
+                    imageUriLoader = contentURI
+                    Glide.with(context!!).load(contentURI).into(imageView!!)
+                    imageView.setImageURI(contentURI)
                     Toast.makeText(context, "Image Saved!", Toast.LENGTH_SHORT).show()
                 }
                 catch (e: IOException) {
@@ -144,10 +172,19 @@ class AddPostFragment : Fragment() {
         else if (requestCode == CAMERA)
         {
             val thumbnail = data!!.extras!!.get("data") as Bitmap
-            imageview!!.setImageBitmap(thumbnail)
-            imageview!!.rotation = 90f
+            imageView!!.setImageBitmap(thumbnail)
+            imageView!!.rotation = 90f
+            imageUriLoader = getImageUriFromBitmap(context!!,thumbnail)
             Toast.makeText(context, "Image Saved!", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun getImageUriFromBitmap(inContext: Context,inImage : Bitmap): Uri{
+        val bytes = ByteArrayOutputStream()
+        inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
+        val path = MediaStore.Images.Media.insertImage(inContext.getContentResolver(), inImage, "Title", null)
+        return Uri.parse(path)
+
     }
 
 }
