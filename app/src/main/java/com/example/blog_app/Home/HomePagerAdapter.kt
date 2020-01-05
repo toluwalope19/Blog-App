@@ -1,6 +1,7 @@
 package com.example.blog_app.Home
 
 import android.content.Context
+import android.graphics.Color
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import com.bumptech.glide.Glide
 import com.example.blog_app.databinding.CardRowBinding
 import com.example.blog_app.model.OnItemClickListener
 import com.example.blog_app.model.Post
-import com.squareup.picasso.Picasso
+import kotlin.random.Random
 
 class HomePagerAdapter(val onItemClickListener: OnItemClickListener, val context: Context,
                        var posts: List<Post> = arrayListOf()): RecyclerView.Adapter<HomePagerAdapter.HomePagerHolder>() {
@@ -22,10 +23,12 @@ class HomePagerAdapter(val onItemClickListener: OnItemClickListener, val context
         val inflater = LayoutInflater.from(parent.context)
         val binding = CardRowBinding.inflate(inflater,parent,false)
 
+
         return HomePagerHolder(binding)
     }
 
     override fun getItemCount(): Int {
+        val rand = Random
         return posts.size
     }
 

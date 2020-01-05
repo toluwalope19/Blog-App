@@ -2,25 +2,27 @@ package com.example.blog_app.Home
 
 import android.content.Intent
 import android.gesture.GestureOverlayView
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.core.view.ViewCompat
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
+import com.example.blog_app.LogInActivity
 import com.example.blog_app.R
 import com.example.blog_app.databinding.FragmentHomeBinding
 import com.example.blog_app.model.OnItemClickListener
 import com.example.blog_app.model.Post
-import com.example.blog_app.postDetail.PostDetailFragment
-import kotlinx.android.synthetic.main.home_post_row.*
-
+import com.google.firebase.auth.FirebaseAuth
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class HomeFragment : Fragment() {
@@ -28,6 +30,9 @@ class HomeFragment : Fragment() {
     companion object {
         fun newInstance() = HomeFragment()
     }
+   lateinit var logOut : ImageView
+    lateinit var mFirebaseAuth: FirebaseAuth
+    private lateinit var mAuthStateListener : FirebaseAuth.AuthStateListener
 
 
     override fun onCreateView(
@@ -38,7 +43,13 @@ class HomeFragment : Fragment() {
 
        val viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
 
+        logOut = binding.LogOut
 
+
+        logOut.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(context,LogInActivity::class.java))
+        }
         var myView = binding.recyclerViewHome
         myView.layoutManager = LinearLayoutManager(context)
 
@@ -94,6 +105,14 @@ class HomeFragment : Fragment() {
         },context!!,viewModel.apply {
 
           })
+
+        //create a date string.
+        //create a date string.
+        val sdf =SimpleDateFormat("dd/MM/yyyy" )
+        val currentDate = sdf.format(Date())
+        binding.dateToday.text = currentDate
+
+
 
 
 

@@ -11,8 +11,20 @@
 
 <RelativeLayout
     android:layout_width="match_parent"
+    android:background="@color/boxShadowsColor"
     android:layout_height="match_parent"
     tools:context=".Home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/LogOut"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:tint="@color/colorAccent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/log_out"
+        android:layout_alignParentEnd="true"/>
+
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -28,6 +40,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/title"
         android:textColor="@color/text"
+        android:layout_marginTop="8dp"
         android:text="@string/interest"/>
 
     <LinearLayout
@@ -37,6 +50,7 @@
 
   <androidx.viewpager2.widget.ViewPager2
       android:id="@+id/viewPager"
+      android:layout_marginTop="8dp"
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
 
@@ -45,9 +59,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
         android:weightSum="2">
         <TextView
+            android:id="@+id/date_today"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -73,7 +89,7 @@
                 android:id="@+id/recycler_viewHome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+                android:layout_marginTop="4dp"/>
 
 
 

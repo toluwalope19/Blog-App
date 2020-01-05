@@ -14,9 +14,11 @@ public class FragmentHomeBindingImpl extends FragmentHomeBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.viewPager, 1);
-        sViewsWithIds.put(R.id.recycler_viewHome, 2);
-        sViewsWithIds.put(R.id.fab, 3);
+        sViewsWithIds.put(R.id.LogOut, 1);
+        sViewsWithIds.put(R.id.viewPager, 2);
+        sViewsWithIds.put(R.id.date_today, 3);
+        sViewsWithIds.put(R.id.recycler_viewHome, 4);
+        sViewsWithIds.put(R.id.fab, 5);
     }
     // views
     @NonNull
@@ -27,13 +29,15 @@ public class FragmentHomeBindingImpl extends FragmentHomeBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentHomeBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private FragmentHomeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[3]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
-            , (androidx.viewpager2.widget.ViewPager2) bindings[1]
+            , (android.widget.ImageView) bindings[1]
+            , (android.widget.TextView) bindings[3]
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[5]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[4]
+            , (androidx.viewpager2.widget.ViewPager2) bindings[2]
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);

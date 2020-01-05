@@ -31,6 +31,9 @@ public abstract class HomePostRowBinding extends ViewDataBinding {
   public final ImageView menu;
 
   @NonNull
+  public final TextView postDate;
+
+  @NonNull
   public final TextView showPostHomeCategory;
 
   @NonNull
@@ -43,13 +46,14 @@ public abstract class HomePostRowBinding extends ViewDataBinding {
   protected Post mPosts;
 
   protected HomePostRowBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView comment, ImageView like, LinearLayout linear1, ImageView menu,
+      ImageView comment, ImageView like, LinearLayout linear1, ImageView menu, TextView postDate,
       TextView showPostHomeCategory, ImageView showPostHomeImage, TextView showPostHomeTitle) {
     super(_bindingComponent, _root, _localFieldCount);
     this.comment = comment;
     this.like = like;
     this.linear1 = linear1;
     this.menu = menu;
+    this.postDate = postDate;
     this.showPostHomeCategory = showPostHomeCategory;
     this.showPostHomeImage = showPostHomeImage;
     this.showPostHomeTitle = showPostHomeTitle;

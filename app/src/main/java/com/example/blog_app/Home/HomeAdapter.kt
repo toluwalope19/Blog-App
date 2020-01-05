@@ -21,10 +21,11 @@ import com.example.blog_app.model.OnItemClickListener
 import com.example.blog_app.model.Post
 
 import com.squareup.picasso.Picasso
+import java.util.*
 
 class HomeAdapter(val onItemClickListener: OnItemClickListener, val context: Context,var model : HomeViewModel): RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
 
-
+   private val androidColors = context.resources.getIntArray(R.array.androidcolors)
 
 
     var posts: List<Post> = arrayListOf()
@@ -40,6 +41,11 @@ class HomeAdapter(val onItemClickListener: OnItemClickListener, val context: Con
     }
 
     override fun onBindViewHolder(holder: HomeHolder, position: Int) {
+
+
+        val randomAndroidColor = androidColors[Random().nextInt(androidColors.size)]
+        val texts = holder.binding.showPostHomeCategory
+        texts?.setTextColor(randomAndroidColor)
 
         val post = posts.get(position)
         val imgString = post.image
@@ -83,8 +89,6 @@ class HomeAdapter(val onItemClickListener: OnItemClickListener, val context: Con
                                     btnPositive.layoutParams = layoutParams
                                     btnNegative.layoutParams = layoutParams
                                 }
-                                R.id.update ->{
-                                    }
                                 }
 
                             true

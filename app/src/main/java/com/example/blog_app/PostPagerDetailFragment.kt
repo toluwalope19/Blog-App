@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.blog_app.Home.HomeFragmentDirections
 import com.example.blog_app.databinding.FragmentPostPagerDetailBinding
 import com.example.blog_app.model.Post
 import com.example.blog_app.postDetail.PostDetailFragment
@@ -41,6 +42,13 @@ class PostPagerDetailFragment : Fragment() {
 
 
         binding.posts = args.post
+        binding.back.setOnClickListener {
+
+            val action = PostPagerDetailFragmentDirections.actionPostPagerDetailFragmentToHomeFragment()
+
+            findNavController().navigate(action)
+
+        }
 
 
 

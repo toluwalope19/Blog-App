@@ -20,17 +20,21 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.core.graphics.drawable.toBitmap
 import androidx.databinding.BindingAdapter
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.blog_app.Home.HomeFragment
 
 import com.example.blog_app.R
 import com.example.blog_app.databinding.AddPostFragmentBinding
 import com.example.blog_app.databinding.AddPostFragmentBindingImpl
+import com.example.blog_app.editPost.EditPostFragmentDirections
 import com.example.blog_app.model.Post
 import com.example.blog_app.postDetail.PostDetailFragment
 import kotlinx.android.synthetic.main.add_post_fragment.*
 import java.io.ByteArrayOutputStream
 import java.io.IOException
+import java.text.SimpleDateFormat
+import java.util.*
 import android.widget.ArrayAdapter as ArrayAdapter
 
 class AddPostFragment : Fragment() {
@@ -62,7 +66,7 @@ class AddPostFragment : Fragment() {
 
 
 
-
+    ///To show picture dialog
          fun showPictureDialog() {
             val pictureDialog = AlertDialog.Builder(context)
             pictureDialog.setTitle("Select Action")
@@ -73,6 +77,7 @@ class AddPostFragment : Fragment() {
                     0 -> {
                         val galleryIntent = Intent(Intent.ACTION_OPEN_DOCUMENT)
                         galleryIntent.type="image/*"
+                        galleryIntent.addCategory(Intent.CATEGORY_OPENABLE)
                         val mimeTypes = arrayOf("image/jpeg", "image/png")
                         galleryIntent.putExtra(Intent.EXTRA_MIME_TYPES,mimeTypes)
 
@@ -90,8 +95,12 @@ class AddPostFragment : Fragment() {
 
 
 
-
+        //////To add New Post
                 binding.addPost.setOnClickListener{ view ->
+
+                    val sdf = SimpleDateFormat("HH:mm" )
+                    val currentDate = sdf.format(Date())
+                    currentDate.toString()
 
                     val title = binding.addPostTitle.text.toString()
                     val category = binding.addCategory.text.toString()
@@ -99,12 +108,12 @@ class AddPostFragment : Fragment() {
                     val image = binding.addImage.drawable.toBitmap()
 
 
-                    val capturedPost = Post(0,title,category,body,imageUriLoader.toString())
+                    val capturedPost = Post(0,title,category,body,currentDate,imageUriLoader.toString())
 
                     viewModel.savePost(capturedPost)
 
-
-
+                    val action = AddPostFragmentDirections.actionAddPostFragmentToHomeFragment()
+                    findNavController().navigate(action)
 
                     if(categories.text.isEmpty()){
                         error1.visibility= View.VISIBLE
@@ -179,6 +188,7 @@ class AddPostFragment : Fragment() {
         }
     }
 
+//To get image Uri from Bitmap
     private fun getImageUriFromBitmap(inContext: Context,inImage : Bitmap): Uri{
         val bytes = ByteArrayOutputStream()
         inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes)

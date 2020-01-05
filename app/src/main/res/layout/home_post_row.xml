@@ -47,7 +47,9 @@
             android:id="@+id/showPostHomeCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="10dp"
             android:textColor="@color/text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:tooltipText="@string/category"
             android:text="@{posts.category}"
             android:textAllCaps="true"
@@ -55,6 +57,7 @@
         <TextView
             android:id="@+id/showPostHomeTitle"
             android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_height="wrap_content"
             android:text="@{posts.title}"/>
@@ -64,6 +67,15 @@
             android:layout_height="wrap_content"
             android:visibility="gone"
             android:text="@{posts.post}"/>
+        <TextView
+            android:id="@+id/postDate"
+            android:textSize="11dp"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@{posts.date}"/>
+
 
     </LinearLayout>
     </LinearLayout>
@@ -106,6 +118,7 @@
             android:src="@drawable/ic_more_vert_black_24dp" />
 
     </LinearLayout>
+    <View style="@style/Divider"/>
 
 
 </LinearLayout>

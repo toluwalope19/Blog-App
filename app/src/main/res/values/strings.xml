@@ -8,7 +8,7 @@
     <string name="fav">Checkout Your Favourites Stories</string>
     <string name="interest">Stories that might interest you</string>
     <string name="Stories">Your Stories</string>
-    <string name="submit_Post">Submit Post</string>
+    <string name="submit_Post">Publish</string>
     <string name="update_Post">Update Post</string>
     <string name="categoryRequired">Please fill in all field before submission</string>
     <string name="today">Today</string>

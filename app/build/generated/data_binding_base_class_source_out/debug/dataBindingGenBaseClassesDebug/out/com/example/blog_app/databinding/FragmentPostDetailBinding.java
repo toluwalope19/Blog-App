@@ -19,6 +19,9 @@ import java.lang.Object;
 
 public abstract class FragmentPostDetailBinding extends ViewDataBinding {
   @NonNull
+  public final ImageView back;
+
+  @NonNull
   public final TextView detailCategory;
 
   @NonNull
@@ -37,9 +40,6 @@ public abstract class FragmentPostDetailBinding extends ViewDataBinding {
   public final Guideline guideline3;
 
   @NonNull
-  public final ImageView imageView;
-
-  @NonNull
   public final ImageView imageView3;
 
   @NonNull
@@ -49,17 +49,17 @@ public abstract class FragmentPostDetailBinding extends ViewDataBinding {
   protected Post mPosts;
 
   protected FragmentPostDetailBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView detailCategory, ImageView detailImage, TextView detailTitle, Guideline guideline,
-      Guideline guideline2, Guideline guideline3, ImageView imageView, ImageView imageView3,
+      ImageView back, TextView detailCategory, ImageView detailImage, TextView detailTitle,
+      Guideline guideline, Guideline guideline2, Guideline guideline3, ImageView imageView3,
       TextView postDetail) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.back = back;
     this.detailCategory = detailCategory;
     this.detailImage = detailImage;
     this.detailTitle = detailTitle;
     this.guideline = guideline;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
-    this.imageView = imageView;
     this.imageView3 = imageView3;
     this.postDetail = postDetail;
   }

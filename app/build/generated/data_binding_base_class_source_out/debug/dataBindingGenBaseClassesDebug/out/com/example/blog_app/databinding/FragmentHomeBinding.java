@@ -4,6 +4,8 @@ package com.example.blog_app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
@@ -19,6 +21,12 @@ import java.lang.Object;
 
 public abstract class FragmentHomeBinding extends ViewDataBinding {
   @NonNull
+  public final ImageView LogOut;
+
+  @NonNull
+  public final TextView dateToday;
+
+  @NonNull
   public final FloatingActionButton fab;
 
   @NonNull
@@ -31,8 +39,11 @@ public abstract class FragmentHomeBinding extends ViewDataBinding {
   protected Post mPost;
 
   protected FragmentHomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      FloatingActionButton fab, RecyclerView recyclerViewHome, ViewPager2 viewPager) {
+      ImageView LogOut, TextView dateToday, FloatingActionButton fab, RecyclerView recyclerViewHome,
+      ViewPager2 viewPager) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.LogOut = LogOut;
+    this.dateToday = dateToday;
     this.fab = fab;
     this.recyclerViewHome = recyclerViewHome;
     this.viewPager = viewPager;

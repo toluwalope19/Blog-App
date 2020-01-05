@@ -32,7 +32,7 @@ public final class PostDao_Impl implements PostDao {
     this.__insertionAdapterOfPost = new EntityInsertionAdapter<Post>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `post` (`id`,`title`,`category`,`post`,`Image`) VALUES (nullif(?, 0),?,?,?,?)";
+        return "INSERT OR ABORT INTO `post` (`id`,`title`,`category`,`post`,`date`,`Image`) VALUES (nullif(?, 0),?,?,?,?,?)";
       }
 
       @Override
@@ -53,10 +53,15 @@ public final class PostDao_Impl implements PostDao {
         } else {
           stmt.bindString(4, value.getPost());
         }
-        if (value.getImage() == null) {
+        if (value.getDate() == null) {
           stmt.bindNull(5);
         } else {
-          stmt.bindString(5, value.getImage());
+          stmt.bindString(5, value.getDate());
+        }
+        if (value.getImage() == null) {
+          stmt.bindNull(6);
+        } else {
+          stmt.bindString(6, value.getImage());
         }
       }
     };
@@ -74,7 +79,7 @@ public final class PostDao_Impl implements PostDao {
     this.__updateAdapterOfPost = new EntityDeletionOrUpdateAdapter<Post>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `post` SET `id` = ?,`title` = ?,`category` = ?,`post` = ?,`Image` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `post` SET `id` = ?,`title` = ?,`category` = ?,`post` = ?,`date` = ?,`Image` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -95,12 +100,17 @@ public final class PostDao_Impl implements PostDao {
         } else {
           stmt.bindString(4, value.getPost());
         }
-        if (value.getImage() == null) {
+        if (value.getDate() == null) {
           stmt.bindNull(5);
         } else {
-          stmt.bindString(5, value.getImage());
+          stmt.bindString(5, value.getDate());
         }
-        stmt.bindLong(6, value.getId());
+        if (value.getImage() == null) {
+          stmt.bindNull(6);
+        } else {
+          stmt.bindString(6, value.getImage());
+        }
+        stmt.bindLong(7, value.getId());
       }
     };
   }
@@ -154,6 +164,7 @@ public final class PostDao_Impl implements PostDao {
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "category");
           final int _cursorIndexOfPost = CursorUtil.getColumnIndexOrThrow(_cursor, "post");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final int _cursorIndexOfImage = CursorUtil.getColumnIndexOrThrow(_cursor, "Image");
           final List<Post> _result = new ArrayList<Post>(_cursor.getCount());
           while(_cursor.moveToNext()) {
@@ -166,9 +177,11 @@ public final class PostDao_Impl implements PostDao {
             _tmpCategory = _cursor.getString(_cursorIndexOfCategory);
             final String _tmpPost;
             _tmpPost = _cursor.getString(_cursorIndexOfPost);
+            final String _tmpDate;
+            _tmpDate = _cursor.getString(_cursorIndexOfDate);
             final String _tmpImage;
             _tmpImage = _cursor.getString(_cursorIndexOfImage);
-            _item = new Post(_tmpId,_tmpTitle,_tmpCategory,_tmpPost,_tmpImage);
+            _item = new Post(_tmpId,_tmpTitle,_tmpCategory,_tmpPost,_tmpDate,_tmpImage);
             _result.add(_item);
           }
           return _result;
@@ -197,6 +210,7 @@ public final class PostDao_Impl implements PostDao {
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "category");
           final int _cursorIndexOfPost = CursorUtil.getColumnIndexOrThrow(_cursor, "post");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final int _cursorIndexOfImage = CursorUtil.getColumnIndexOrThrow(_cursor, "Image");
           final List<Post> _result = new ArrayList<Post>(_cursor.getCount());
           while(_cursor.moveToNext()) {
@@ -209,9 +223,11 @@ public final class PostDao_Impl implements PostDao {
             _tmpCategory = _cursor.getString(_cursorIndexOfCategory);
             final String _tmpPost;
             _tmpPost = _cursor.getString(_cursorIndexOfPost);
+            final String _tmpDate;
+            _tmpDate = _cursor.getString(_cursorIndexOfDate);
             final String _tmpImage;
             _tmpImage = _cursor.getString(_cursorIndexOfImage);
-            _item = new Post(_tmpId,_tmpTitle,_tmpCategory,_tmpPost,_tmpImage);
+            _item = new Post(_tmpId,_tmpTitle,_tmpCategory,_tmpPost,_tmpDate,_tmpImage);
             _result.add(_item);
           }
           return _result;

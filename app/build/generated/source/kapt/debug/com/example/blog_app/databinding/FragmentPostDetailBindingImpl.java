@@ -17,7 +17,7 @@ public class FragmentPostDetailBindingImpl extends FragmentPostDetailBinding  {
         sViewsWithIds.put(R.id.guideline3, 5);
         sViewsWithIds.put(R.id.guideline2, 6);
         sViewsWithIds.put(R.id.guideline, 7);
-        sViewsWithIds.put(R.id.imageView, 8);
+        sViewsWithIds.put(R.id.back, 8);
         sViewsWithIds.put(R.id.imageView3, 9);
     }
     // views
@@ -33,13 +33,13 @@ public class FragmentPostDetailBindingImpl extends FragmentPostDetailBinding  {
     }
     private FragmentPostDetailBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.ImageView) bindings[8]
             , (android.widget.TextView) bindings[2]
             , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[3]
             , (androidx.constraintlayout.widget.Guideline) bindings[7]
             , (androidx.constraintlayout.widget.Guideline) bindings[6]
             , (androidx.constraintlayout.widget.Guideline) bindings[5]
-            , (android.widget.ImageView) bindings[8]
             , (android.widget.ImageView) bindings[9]
             , (android.widget.TextView) bindings[4]
             );

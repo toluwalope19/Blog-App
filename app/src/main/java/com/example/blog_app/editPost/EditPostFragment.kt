@@ -25,6 +25,8 @@ import kotlinx.android.synthetic.main.add_post_fragment.*
 import kotlinx.android.synthetic.main.edit_post_fragment.*
 import java.io.ByteArrayOutputStream
 import java.io.IOException
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class EditPostFragment : Fragment() {
@@ -100,6 +102,9 @@ class EditPostFragment : Fragment() {
 ////                        edit.setBackgroundResource(R.drawable.edittexterror)
 //                    }else{
 //                        error1?.visibility = View.GONE
+            val sdf = SimpleDateFormat("HH:mm" )
+            val currentDate = sdf.format(Date())
+            currentDate.toString()
 //                    }
 
                 var title = binding.editPostTitle.text.toString()
@@ -109,7 +114,7 @@ class EditPostFragment : Fragment() {
 
 
 
-           val updatedPost = Post(0,title,category,post,image)
+           val updatedPost = Post(0,title,category,post,currentDate,image)
 
                 if(incomingPost == null){
                     viewModel.savePost(updatedPost)

@@ -24,6 +24,9 @@ data class Post ( @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "post")
     var post: String,
 
+                  @ColumnInfo(name = "date")
+                  var date: String,
+
     @ColumnInfo(name = "Image")
     var image: String
     ): Parcelable

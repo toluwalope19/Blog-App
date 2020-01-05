@@ -43,6 +43,10 @@ class PostDetailFragment : Fragment() {
 
 
         binding.posts = args.post
+        binding.back.setOnClickListener {
+            val action = PostDetailFragmentDirections.actionPostDetailFragmentToHomeFragment()
+            findNavController().navigate(action)
+        }
 
 
 
