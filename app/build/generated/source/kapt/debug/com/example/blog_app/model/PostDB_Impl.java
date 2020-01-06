@@ -30,9 +30,9 @@ public final class PostDB_Impl extends PostDB {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `post` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `category` TEXT NOT NULL, `post` TEXT NOT NULL, `date` TEXT NOT NULL, `Image` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `post` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `category` TEXT NOT NULL, `post` TEXT NOT NULL, `date` TEXT NOT NULL, `claps` INTEGER NOT NULL, `Image` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ef770c05bf377faced2900546ed0b76b')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '960e0e3fd95f30146aa96d206c8b0eb0')");
       }
 
       @Override
@@ -76,12 +76,13 @@ public final class PostDB_Impl extends PostDB {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsPost = new HashMap<String, TableInfo.Column>(6);
+        final HashMap<String, TableInfo.Column> _columnsPost = new HashMap<String, TableInfo.Column>(7);
         _columnsPost.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPost.put("title", new TableInfo.Column("title", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPost.put("category", new TableInfo.Column("category", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPost.put("post", new TableInfo.Column("post", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPost.put("date", new TableInfo.Column("date", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsPost.put("claps", new TableInfo.Column("claps", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPost.put("Image", new TableInfo.Column("Image", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysPost = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesPost = new HashSet<TableInfo.Index>(0);
@@ -94,7 +95,7 @@ public final class PostDB_Impl extends PostDB {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "ef770c05bf377faced2900546ed0b76b", "3a5fe8dbef72c7ae37479eab8d834791");
+    }, "960e0e3fd95f30146aa96d206c8b0eb0", "07a666fd4dd7c850d09b98741eec88f2");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

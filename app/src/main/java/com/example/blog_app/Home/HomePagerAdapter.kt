@@ -28,7 +28,6 @@ class HomePagerAdapter(val onItemClickListener: OnItemClickListener, val context
     }
 
     override fun getItemCount(): Int {
-        val rand = Random
         return posts.size
     }
 

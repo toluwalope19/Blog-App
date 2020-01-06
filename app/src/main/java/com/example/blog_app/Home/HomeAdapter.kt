@@ -26,6 +26,8 @@ import java.util.*
 class HomeAdapter(val onItemClickListener: OnItemClickListener, val context: Context,var model : HomeViewModel): RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
 
    private val androidColors = context.resources.getIntArray(R.array.androidcolors)
+    var counter = 0
+    lateinit var viewModel : HomeViewModel
 
 
     var posts: List<Post> = arrayListOf()
@@ -50,7 +52,8 @@ class HomeAdapter(val onItemClickListener: OnItemClickListener, val context: Con
         val post = posts.get(position)
         val imgString = post.image
         holder.bind(post, onItemClickListener)
-        holder.binding.comment.setOnClickListener {
+
+        holder.binding.edit.setOnClickListener {
             val action = HomeFragmentDirections.actionHomeFragmentToEditPostFragment()
             action.post = posts[position]
             Navigation.findNavController(it).navigate(action)

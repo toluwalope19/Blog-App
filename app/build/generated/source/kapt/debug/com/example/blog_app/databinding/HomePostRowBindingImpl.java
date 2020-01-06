@@ -14,9 +14,9 @@ public class HomePostRowBindingImpl extends HomePostRowBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.comment, 6);
-        sViewsWithIds.put(R.id.like, 7);
-        sViewsWithIds.put(R.id.menu, 8);
+        sViewsWithIds.put(R.id.edit, 7);
+        sViewsWithIds.put(R.id.clapIcon, 8);
+        sViewsWithIds.put(R.id.menu, 9);
     }
     // views
     @NonNull
@@ -27,19 +27,21 @@ public class HomePostRowBindingImpl extends HomePostRowBinding  {
     // Inverse Binding Event Handlers
 
     public HomePostRowBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private HomePostRowBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[6]
+            , (android.widget.ImageView) bindings[8]
+            , (android.widget.TextView) bindings[6]
             , (android.widget.ImageView) bindings[7]
             , (android.widget.LinearLayout) bindings[0]
-            , (android.widget.ImageView) bindings[8]
+            , (android.widget.ImageView) bindings[9]
             , (android.widget.TextView) bindings[5]
             , (android.widget.TextView) bindings[2]
             , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[3]
             );
+        this.clapNo.setTag(null);
         this.linear1.setTag(null);
         this.mboundView4 = (android.widget.TextView) bindings[4];
         this.mboundView4.setTag(null);
@@ -110,7 +112,9 @@ public class HomePostRowBindingImpl extends HomePostRowBinding  {
         com.example.blog_app.model.Post posts = mPosts;
         java.lang.String postsTitle = null;
         java.lang.String postsImage = null;
+        int postsClap = 0;
         java.lang.String postsCategory = null;
+        java.lang.String stringValueOfPostsClap = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
@@ -125,14 +129,21 @@ public class HomePostRowBindingImpl extends HomePostRowBinding  {
                     postsTitle = posts.getTitle();
                     // read posts.image
                     postsImage = posts.getImage();
+                    // read posts.clap
+                    postsClap = posts.getClap();
                     // read posts.category
                     postsCategory = posts.getCategory();
                 }
+
+
+                // read String.valueOf(posts.clap)
+                stringValueOfPostsClap = java.lang.String.valueOf(postsClap);
         }
         // batch finished
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.clapNo, stringValueOfPostsClap);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, postsPost);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.postDate, postsDate);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.showPostHomeCategory, postsCategory);

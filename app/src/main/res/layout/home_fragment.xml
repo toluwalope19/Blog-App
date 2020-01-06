@@ -22,6 +22,7 @@
         android:tint="@color/colorAccent"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginTop="8dp"
+        android:tooltipText="LogOut"
         android:src="@drawable/log_out"
         android:layout_alignParentEnd="true"/>
 
@@ -66,7 +67,7 @@
             android:id="@+id/date_today"
             android:layout_width="wrap_content"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="32dp"
             android:text="12-03-1995"
             />
         <LinearLayout
@@ -78,7 +79,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="Latest"
                 android:layout_weight="1"
                 android:textSize="@dimen/today"

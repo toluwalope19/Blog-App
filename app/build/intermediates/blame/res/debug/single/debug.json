@@ -1680,10 +1680,6 @@
         "source": "C:\\Users\\Ayodele\\.gradle\\caches\\transforms-2\\files-2.1\\cbbebe9eee24c2e831c01c8c3c23c664\\material-1.0.0\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_profile_post_row.xml.flat",
-        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\profile_post_row.xml"
-    },
-    {
         "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
         "source": "C:\\Users\\Ayodele\\.gradle\\caches\\transforms-2\\files-2.1\\e1da2d044b62c3e0e92e1a6afb1e8a3d\\appcompat-1.1.0\\res\\layout\\abc_action_menu_layout.xml"
     },
@@ -2502,6 +2498,10 @@
     {
         "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Ayodele\\.gradle\\caches\\transforms-2\\files-2.1\\e1da2d044b62c3e0e92e1a6afb1e8a3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_comment_background.xml.flat",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\drawable\\comment_background.xml"
     },
     {
         "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_log_in.xml.flat",

@@ -8,6 +8,7 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.ImageDecoder
 import android.net.Uri
+import android.opengl.Visibility
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.provider.MediaStore
@@ -108,7 +109,7 @@ class AddPostFragment : Fragment() {
                     val image = binding.addImage.drawable.toBitmap()
 
 
-                    val capturedPost = Post(0,title,category,body,currentDate,imageUriLoader.toString())
+                    val capturedPost = Post(0,title,category,body,currentDate,0,imageUriLoader.toString())
 
                     viewModel.savePost(capturedPost)
 
@@ -169,6 +170,7 @@ class AddPostFragment : Fragment() {
                     val contentURI = data!!.data
                     imageUriLoader = contentURI
                     Glide.with(context!!).load(contentURI).into(imageView!!)
+                    imageView.visibility = View.VISIBLE
                     imageView.setImageURI(contentURI)
                     Toast.makeText(context, "Image Saved!", Toast.LENGTH_SHORT).show()
                 }

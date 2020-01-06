@@ -29,6 +29,8 @@
         <action
             android:id="@+id/action_homeFragment_to_addPostFragment2"
             app:destination="@id/addPostFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <argument
@@ -40,7 +42,7 @@
     <fragment
         android:id="@+id/addPostFragment"
         android:name="com.example.blog_app.addPost.AddPostFragment"
-        android:label="AddPostFragment" >
+        android:label="Create  Post" >
         <argument
             android:name="post"
             app:argType="com.example.blog_app.model.Post"
@@ -53,7 +55,8 @@
     <fragment
         android:id="@+id/postDetailFragment"
         android:name="com.example.blog_app.postDetail.PostDetailFragment"
-        android:label="PostDetailFragment" >
+        android:label="Read Post"
+        tools:layout="@layout/post_detail_fragment">
         <argument
             android:name="post"
             app:argType="com.example.blog_app.model.Post" />
@@ -64,7 +67,7 @@
     <fragment
         android:id="@+id/postPagerDetailFragment"
         android:name="com.example.blog_app.PostPagerDetailFragment"
-        android:label="PostPagerDetailFragment" >
+        android:label="Read Post">
         <argument
             android:name="post"
             app:argType="com.example.blog_app.model.Post" />
@@ -80,7 +83,7 @@
     <fragment
         android:id="@+id/editPostFragment"
         android:name="com.example.blog_app.editPost.EditPostFragment"
-        android:label="EditPostFragment" >
+        android:label="Edit Blogpost" >
         <argument
             android:name="post"
             app:argType="com.example.blog_app.model.Post"

@@ -80,6 +80,7 @@
     </LinearLayout>
     </LinearLayout>
     <View style="@style/Divider"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -88,7 +89,7 @@
         android:layout_weight="2">
 
             <ImageView
-                android:id="@+id/comment"
+                android:id="@+id/edit"
                 android:layout_width="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
@@ -96,15 +97,35 @@
                 android:tint="@color/second_text"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_edit_black_24dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
             <ImageView
-                android:id="@+id/like"
-                android:layout_marginBottom="4dp"
-                android:layout_gravity="bottom"
-                android:tint="@color/second_text"
+                android:id="@+id/clapIcon"
                 android:layout_width="24dp"
-                android:layout_weight="1"
                 android:layout_height="24dp"
-                android:src="@drawable/clap" />
+                android:layout_gravity="bottom"
+                android:src="@drawable/clap"
+                android:layout_marginTop="4dp"
+                android:tint="@color/second_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(posts.clap)}"
+                android:textSize="16dp"
+                android:textColor="@color/second_text"
+                android:id="@+id/clapNo"
+                app:layout_constraintLeft_toRightOf="@id/clapIcon"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <ImageView
             android:id="@+id/menu"

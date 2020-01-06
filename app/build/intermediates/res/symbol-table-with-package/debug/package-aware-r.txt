@@ -1120,6 +1120,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable camera
 drawable clap
+drawable comment_background
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1304,10 +1305,11 @@ id changeImage
 id checkbox
 id checked
 id chronometer
+id clapIcon
+id clapNo
 id clip_horizontal
 id clip_vertical
 id collapseActionView
-id comment
 id container
 id content
 id contentPanel
@@ -1332,6 +1334,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id edit
 id editCategory
 id editImage
 id editPost
@@ -1383,7 +1386,6 @@ id labeled
 id largeLabel
 id left
 id light
-id like
 id line1
 id line3
 id linear1
@@ -1634,7 +1636,6 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout post_detail_fragment
 layout profile_fragment
-layout profile_post_row
 layout search_bar
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

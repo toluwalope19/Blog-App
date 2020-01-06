@@ -7,7 +7,7 @@
     <dimen name="icon_margin1">88dp</dimen>
 
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="category">20sp</dimen>
+    <dimen name="category">12sp</dimen>
     <dimen name="hint">16sp</dimen>
     <dimen name="title">16sp</dimen>
     <dimen name="today">24sp</dimen>

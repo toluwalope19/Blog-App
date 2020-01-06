@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
+import android.opengl.Visibility
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.provider.MediaStore
@@ -17,6 +18,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.blog_app.R
 import com.example.blog_app.databinding.EditPostFragmentBinding
@@ -46,6 +48,8 @@ class EditPostFragment : Fragment() {
 
     val error1 =view?.findViewById<TextView>(R.id.error1)
 
+    val args : EditPostFragmentArgs by navArgs()
+
 
 
     private lateinit var viewModel: EditPostViewModel
@@ -57,8 +61,10 @@ class EditPostFragment : Fragment() {
         val binding =   EditPostFragmentBinding.inflate(inflater, container, false)
         val changeImage = binding.changeImage
          val editPost =  binding.editSubmitPost
+        binding.posts = args.post
 
          val imageView = binding.editImage
+        imageView.visibility = View.VISIBLE
 
 
         fun showPictureDialog() {
@@ -114,7 +120,7 @@ class EditPostFragment : Fragment() {
 
 
 
-           val updatedPost = Post(0,title,category,post,currentDate,image)
+           val updatedPost = Post(0,title,category,post,currentDate,0,image)
 
                 if(incomingPost == null){
                     viewModel.savePost(updatedPost)

@@ -36,8 +36,7 @@ class LogInActivity : AppCompatActivity() {
                 startActivity(Intent(this,MainActivity::class.java))
 
             }else{
-                startActivity(Intent(this,LogInActivity::class.java))
-                Toast.makeText(this, "Login failed", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Please Log In", Toast.LENGTH_LONG).show()
             }
         }
         logIn.setOnClickListener {

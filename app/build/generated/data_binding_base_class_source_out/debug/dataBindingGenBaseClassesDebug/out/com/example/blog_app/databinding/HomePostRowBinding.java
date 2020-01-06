@@ -19,10 +19,13 @@ import java.lang.Object;
 
 public abstract class HomePostRowBinding extends ViewDataBinding {
   @NonNull
-  public final ImageView comment;
+  public final ImageView clapIcon;
 
   @NonNull
-  public final ImageView like;
+  public final TextView clapNo;
+
+  @NonNull
+  public final ImageView edit;
 
   @NonNull
   public final LinearLayout linear1;
@@ -46,11 +49,13 @@ public abstract class HomePostRowBinding extends ViewDataBinding {
   protected Post mPosts;
 
   protected HomePostRowBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView comment, ImageView like, LinearLayout linear1, ImageView menu, TextView postDate,
-      TextView showPostHomeCategory, ImageView showPostHomeImage, TextView showPostHomeTitle) {
+      ImageView clapIcon, TextView clapNo, ImageView edit, LinearLayout linear1, ImageView menu,
+      TextView postDate, TextView showPostHomeCategory, ImageView showPostHomeImage,
+      TextView showPostHomeTitle) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.comment = comment;
-    this.like = like;
+    this.clapIcon = clapIcon;
+    this.clapNo = clapNo;
+    this.edit = edit;
     this.linear1 = linear1;
     this.menu = menu;
     this.postDate = postDate;

@@ -102,6 +102,13 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/detail_title"
         android:fontFamily="@font/opensans_semibold"
@@ -125,6 +132,20 @@
         android:layout_height="wrap_content"
         android:text="@{posts.post}"/>
 
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginStart="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="textMultiLine"-->
+<!--        android:lines="6"-->
+<!--        android:minLines="4"-->
+<!--        android:hint="Add a Comment"-->
+<!--        android:background="@drawable/comment_background"-->
+<!--        />-->
 
+
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
 </layout>

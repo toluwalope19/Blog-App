@@ -35,6 +35,7 @@
             android:layout_height="wrap_content"
             android:text="@{posts.category}"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:textAllCaps="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:textSize="@dimen/category"
