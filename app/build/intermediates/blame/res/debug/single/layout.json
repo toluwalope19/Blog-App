@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\home_fragment.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\home_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\edit_post_fragment.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\edit_post_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\post_detail_fragment.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\post_detail_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_row.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\card_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\home_post_row.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\home_post_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_post_fragment.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\add_post_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_post_pager_detail.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\fragment_post_pager_detail.xml"
+    }
+]

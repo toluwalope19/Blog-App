@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Blog-App</string>
+    <string name="category">Category</string>
+    <string name="title">Title</string>
+    <string name="post">Post</string>
+    <string name="postTitle">Post Title</string>
+    <string name="writePost">Write Post</string>
+    <string name="fav">Checkout Your Favourites Stories</string>
+    <string name="interest">Stories that might interest you</string>
+    <string name="Stories">Your Stories</string>
+    <string name="submit_Post">Publish</string>
+    <string name="update_Post">Update Post</string>
+    <string name="categoryRequired">Please fill in all field before submission</string>
+    <string name="today">Today</string>
+
+    <array name="categories">
+        <item>Choose Category</item>
+        <item>Sport</item>
+        <item>News</item>
+        <item>Entertainment</item>
+        <item>Fashion</item>
+        <item>Travel</item>
+
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

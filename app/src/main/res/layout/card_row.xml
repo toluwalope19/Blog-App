@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="com.bumptech.glide.Glide"/>
+        <variable
+            name="posts"
+            type="com.example.blog_app.model.Post" />
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/pageMarginAndOffset"
+    android:layout_marginRight="@dimen/pageMarginAndOffset"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/cardRowImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@{posts.image}"
+            android:contentDescription="@string/category"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/cardRowCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{posts.category}"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:textAllCaps="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="@dimen/category"
+            android:textColor="@color/second_text"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <TextView
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:id="@+id/cardRowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@{posts.title}"
+            android:textColor="@color/text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+</layout>
