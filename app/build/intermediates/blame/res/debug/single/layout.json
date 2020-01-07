@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\edit_post_fragment.xml"
     },
     {
+        "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\comment_row.xml",
+        "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\comment_row.xml"
+    },
+    {
         "merged": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\post_detail_fragment.xml",
         "source": "C:\\Users\\Ayodele\\Desktop\\Blog-App\\app\\src\\main\\res\\layout\\post_detail_fragment.xml"
     },

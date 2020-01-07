@@ -15,6 +15,7 @@ import com.example.blog_app.databinding.FragmentPostPagerDetailBinding
 import com.example.blog_app.model.Post
 import com.example.blog_app.postDetail.PostDetailFragment
 import com.example.blog_app.postDetail.PostDetailFragmentArgs
+import com.example.blog_app.postDetail.PostDetailFragmentDirections
 import com.example.blog_app.postDetail.PostDetailViewModel
 import java.util.*
 
@@ -42,12 +43,13 @@ class PostPagerDetailFragment : Fragment() {
 
 
         binding.posts = args.post
-        binding.back.setOnClickListener {
-
+//        binding.toolbar.setNavigationOnClickListener{
+//            val action = PostPagerDetailFragmentDirections.actionPostPagerDetailFragmentToHomeFragment()
+//            findNavController().navigate(action)
+//        }
+        binding.toolbar.setNavigationOnClickListener{
             val action = PostPagerDetailFragmentDirections.actionPostPagerDetailFragmentToHomeFragment()
-
             findNavController().navigate(action)
-
         }
 
 

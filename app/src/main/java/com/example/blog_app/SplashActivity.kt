@@ -7,6 +7,7 @@ import android.os.Handler
 
 class SplashActivity : AppCompatActivity() {
 
+
     private var mDelayHandler: Handler? = null
     private val splashDelay: Long = 3000
 

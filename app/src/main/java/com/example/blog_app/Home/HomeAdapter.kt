@@ -26,7 +26,6 @@ import java.util.*
 class HomeAdapter(val onItemClickListener: OnItemClickListener, val context: Context,var model : HomeViewModel): RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
 
    private val androidColors = context.resources.getIntArray(R.array.androidcolors)
-    var counter = 0
     lateinit var viewModel : HomeViewModel
 
 

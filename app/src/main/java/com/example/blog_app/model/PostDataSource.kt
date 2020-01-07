@@ -17,4 +17,8 @@ interface PostDataSource {
 
 
     fun deletePost(post: Post)
+
+    fun saveComment(comment: Comment)
+
+    fun getPostsAndComments(context: Context): LiveData<List<PostWithComments>>
 }

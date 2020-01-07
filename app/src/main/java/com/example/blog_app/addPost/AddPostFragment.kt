@@ -6,6 +6,7 @@ import android.content.ContentResolver
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.graphics.ImageDecoder
 import android.net.Uri
 import android.opengl.Visibility
@@ -45,6 +46,7 @@ class AddPostFragment : Fragment() {
     private val GALLERY = 1
     private val CAMERA = 2
     private var imageUriLoader: Uri? = null
+    lateinit var binding: AddPostFragmentBinding
 
 
     companion object {
@@ -58,7 +60,7 @@ class AddPostFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = AddPostFragmentBinding.inflate(inflater,container,false)
+         binding = AddPostFragmentBinding.inflate(inflater,container,false)
         val imgBtn = binding.imgBtn
         val imageView = binding.addImage
         val edit = binding.post
@@ -158,7 +160,9 @@ class AddPostFragment : Fragment() {
         super.onActivityResult(requestCode, resultCode, data)
 
 
-        val imageView = view?.findViewById<ImageView>(R.id.addImage)
+        val imageView = binding.addImage
+
+
 
         if (requestCode == GALLERY)
         {
@@ -169,9 +173,9 @@ class AddPostFragment : Fragment() {
                 {
                     val contentURI = data!!.data
                     imageUriLoader = contentURI
-                    Glide.with(context!!).load(contentURI).into(imageView!!)
-                    imageView.visibility = View.VISIBLE
-                    imageView.setImageURI(contentURI)
+//                    Glide.with(context!!).load(contentURI).into(imageView!!)
+                    imageView?.visibility = View.VISIBLE
+                    imageView?.setImageURI(contentURI)
                     Toast.makeText(context, "Image Saved!", Toast.LENGTH_SHORT).show()
                 }
                 catch (e: IOException) {

@@ -181,6 +181,7 @@ class EditPostFragment : Fragment() {
                     val contentURI = data!!.data
                     imageUriLoader = contentURI
                     Glide.with(context!!).load(contentURI).into(imageView!!)
+                    imageView.visibility = View.VISIBLE
                     imageView.setImageURI(contentURI)
                     Toast.makeText(context, "Image Saved!", Toast.LENGTH_SHORT).show()
                 }

@@ -14,39 +14,37 @@ public class FragmentPostPagerDetailBindingImpl extends FragmentPostPagerDetailB
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.guideline3, 5);
-        sViewsWithIds.put(R.id.guideline2, 6);
-        sViewsWithIds.put(R.id.guideline, 7);
-        sViewsWithIds.put(R.id.back, 8);
-        sViewsWithIds.put(R.id.imageView3, 9);
+        sViewsWithIds.put(R.id.toolbar, 5);
+        sViewsWithIds.put(R.id.recyclerComment, 6);
+        sViewsWithIds.put(R.id.newComment, 7);
+        sViewsWithIds.put(R.id.sendComment, 8);
     }
     // views
     @NonNull
-    private final android.widget.LinearLayout mboundView0;
+    private final androidx.coordinatorlayout.widget.CoordinatorLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentPostPagerDetailBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
     }
     private FragmentPostPagerDetailBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[8]
             , (android.widget.TextView) bindings[2]
             , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[3]
-            , (androidx.constraintlayout.widget.Guideline) bindings[7]
-            , (androidx.constraintlayout.widget.Guideline) bindings[6]
-            , (androidx.constraintlayout.widget.Guideline) bindings[5]
-            , (android.widget.ImageView) bindings[9]
+            , (android.widget.EditText) bindings[7]
             , (android.widget.TextView) bindings[4]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[6]
+            , (android.widget.ImageView) bindings[8]
+            , (androidx.appcompat.widget.Toolbar) bindings[5]
             );
         this.detailCategory.setTag(null);
         this.detailImage.setTag(null);
         this.detailTitle.setTag(null);
-        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0 = (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.postDetail.setTag(null);
         setRootTag(root);

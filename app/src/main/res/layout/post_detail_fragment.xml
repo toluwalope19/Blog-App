@@ -9,102 +9,74 @@
             type="com.example.blog_app.model.Post" />
     </data>
 
-<LinearLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
 
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".postDetail.PostDetailFragment">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="wrap_content">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.2" />
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.969" />
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.04" />
+<com.google.android.material.appbar.CollapsingToolbarLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    app:contentScrim="@color/second_text"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
         <ImageView
             android:id="@+id/detailImage"
             android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:src="@{posts.image}"
+            app:layout_collapseMode="parallax"
             android:contentDescription="@string/title"
             android:layout_height="match_parent"/>
-
-
-        <ImageView
-            android:id="@+id/back"
-            android:layout_width="37dp"
-            android:layout_height="31dp"
-            android:tint="@color/second_text"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/guideline3"
-            android:src="@drawable/ic_keyboard_backspace_black_24dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:tint="@color/second_text"
-            android:layout_marginBottom="4dp"
-            app:layout_constraintRight_toLeftOf="@id/guideline2"
-            app:layout_constraintBottom_toTopOf="@id/guideline3"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/icon_margin"
-            android:src="@drawable/clap"
-             />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginEnd="16dp"
+            android:layout_gravity="bottom"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="@id/guideline">
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/detail_category"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/second_text"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
                 android:text="@{posts.category}"
-                android:textAllCaps="true"/>
+                android:textAllCaps="true"
+                android:textColor="@color/second_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <ImageView
                 android:layout_width="wrap_content"
-                android:background="@color/white"
                 android:layout_height="wrap_content"
-                android:tint="@color/second_text"
-                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/white"
                 android:src="@drawable/ic_check_black_24dp"
-                app:layout_constraintRight_toRightOf="parent"/>
+                android:tint="@color/second_text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/ic_keyboard_backspace_black_24dp"/>
+</com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -132,20 +104,46 @@
         android:layout_height="wrap_content"
         android:text="@{posts.post}"/>
 
-<!--    <EditText-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginStart="@dimen/activity_horizontal_margin"-->
-<!--        android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:inputType="textMultiLine"-->
-<!--        android:lines="6"-->
-<!--        android:minLines="4"-->
-<!--        android:hint="Add a Comment"-->
-<!--        android:background="@drawable/comment_background"-->
-<!--        />-->
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/recyclerComment"/>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/newComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_background"
+            android:drawableTint="@color/second_text"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:hint="Add a Comment"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:minLines="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/sendComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/send"
+            android:tint="@color/second_text"
+            app:layout_constraintBottom_toBottomOf="@id/newComment"
+            app:layout_constraintRight_toRightOf="@id/newComment" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
