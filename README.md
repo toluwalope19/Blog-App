@@ -28,7 +28,6 @@ This is a Simple Blog App to perform basic Room operations such as
 Homescreen: 
 <img src="https://github.com/toluwalope19/Blog-App/blob/master/app/src/main/res/drawable/home.png" alt="drawing" width="200"/>
 AddPost: 
-![AddPost]()
 <img src="https://github.com/toluwalope19/Blog-App/raw/master/app/src/main/res/drawable/addscreen.png" alt="drawing" width="200"/>
 
 
