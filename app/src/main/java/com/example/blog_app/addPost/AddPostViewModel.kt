@@ -4,8 +4,10 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.blog_app.model.Post
 import com.example.blog_app.model.PostRepository
+import kotlinx.coroutines.launch
 
 class AddPostViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -18,6 +20,10 @@ class AddPostViewModel(application: Application) : AndroidViewModel(application)
 //    }
 
     fun savePost(post: Post){
-        postRepository.savePost(post)
+        viewModelScope.launch {
+            postRepository.savePost(post)
+        }
+
     }
+
 }

@@ -5,10 +5,11 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Post::class],version = 1)
+@Database(entities = arrayOf(Post::class, Comment::class),version = 2)
 abstract class PostDB : RoomDatabase() {
 
     abstract fun PostDao() : PostDao
+    abstract fun CommentDao() : CommentDao
 
     companion object{
 

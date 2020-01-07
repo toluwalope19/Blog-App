@@ -5,8 +5,11 @@ import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.blog_app.model.Post
 import com.example.blog_app.model.PostRepository
+import com.example.blog_app.model.PostWithComments
+import kotlinx.coroutines.launch
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -17,12 +20,17 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         return postRepository.getPosts(context)
     }
 
-    fun updatePosts(post: Post){
-        return postRepository.updatePost(post)
-    }
-
     fun deletePost(post: Post){
-        return postRepository.deletePost(post)
+        viewModelScope.launch { postRepository.deletePost(post)
+        }
+
     }
 
-}
+    fun getPostsWithComments(context: Context): LiveData<List<PostWithComments>>{
+        return postRepository.getPostsWithComments(context)
+    }
+
+
+    }
+
+

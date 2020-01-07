@@ -22,4 +22,9 @@ interface PostDao {
     @Delete
     fun deleteContact(post: Post)
 
+    @Transaction
+    @Query("SELECT * FROM post")
+    fun getPostsandComments(): LiveData<List<PostWithComments>>
+
+
 }

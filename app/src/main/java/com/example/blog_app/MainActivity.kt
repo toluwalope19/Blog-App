@@ -19,7 +19,6 @@ import com.example.blog_app.Home.HomeFragment
 import com.example.blog_app.addPost.AddPostFragment
 
 import com.example.blog_app.model.Post
-import com.example.blog_app.profile.ProfileFragment
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*

@@ -96,7 +96,6 @@
                 android:scaleType="fitXY"
                 android:visibility="gone"
                 android:src ="@{posts.image}"
-                android:tint="@color/second_text"
                 android:id="@+id/addImage"/>
     <Button
         android:layout_width="wrap_content"

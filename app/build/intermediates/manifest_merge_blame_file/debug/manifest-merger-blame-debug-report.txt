@@ -22,241 +22,301 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:5-67
 14-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:8:22-64
-15
-16    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:25:5-79
-18-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:25:22-76
-19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-19-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
-19-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
-20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-20-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
-20-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
-21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-21-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
-21-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
-22
-23    <application
-23-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:10:5-31:19
-24        android:name="androidx.multidex.MultiDexApplication"
-25        android:allowBackup="true"
-25-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:11:9-35
-26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-26-->[androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\924a7945875ed500e872cdae3dfffb83\core-1.1.0\AndroidManifest.xml:24:18-86
-27        android:debuggable="true"
-28        android:icon="@mipmap/ic_launcher"
-28-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:9-43
-29        android:label="@string/app_name"
-29-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:13:9-41
-30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:9-54
-31        android:supportsRtl="true"
-31-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:15:9-35
-32        android:testOnly="true"
-33        android:theme="@style/AppTheme" >
-33-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:9-40
-34        <activity android:name="com.example.blog_app.RegisterActivity" />
-34-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:17:9-63
-34-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:17:19-51
-35        <activity android:name="com.example.blog_app.LogInActivity" />
-35-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:9-51
-35-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:19-48
-36        <activity
-36-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:19:9-27:20
-37            android:name="com.example.blog_app.SplashActivity"
-37-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:20:13-43
-38            android:theme="@style/AppTheme.NoActionBar" >
-38-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:21:13-56
-39            <intent-filter>
-39-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:22:13-26:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:17-69
-40-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:25:17-77
-42-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:25:27-74
-43            </intent-filter>
-44        </activity>
-45        <activity
-45-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:28:9-30:59
-46            android:name="com.example.blog_app.MainActivity"
-46-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:29:13-41
-47            android:theme="@style/AppTheme.NoActionBar" />
-47-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:30:13-56
-48
-49        <service
-49-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\939a3c7e3d2fbfa640c157cd656b9405\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
-50            android:name="androidx.room.MultiInstanceInvalidationService"
-50-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\939a3c7e3d2fbfa640c157cd656b9405\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
-51            android:exported="false" />
-51-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\939a3c7e3d2fbfa640c157cd656b9405\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
-52
-53        <provider
-53-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-54            android:name="com.squareup.picasso.PicassoProvider"
-54-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-55            android:authorities="com.example.blog_app.com.squareup.picasso"
-55-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-56            android:exported="false" />
-56-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+15    <uses-permission android:name="android.permission.REORDER_TASKS" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:25:5-72
+15-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:25:22-69
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:25:5-79
+17-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:25:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
+18-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+20-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+21
+22    <application
+22-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:10:5-31:19
+23        android:name="androidx.multidex.MultiDexApplication"
+24        android:allowBackup="true"
+24-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:11:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\924a7945875ed500e872cdae3dfffb83\core-1.1.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:12:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:13:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:14:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:15:9-35
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:16:9-40
+33        <activity android:name="com.example.blog_app.RegisterActivity" />
+33-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:17:9-63
+33-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:17:19-51
+34        <activity android:name="com.example.blog_app.LogInActivity" />
+34-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:9-51
+34-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:18:19-48
+35        <activity
+35-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:19:9-27:20
+36            android:name="com.example.blog_app.SplashActivity"
+36-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:20:13-43
+37            android:theme="@style/AppTheme.NoActionBar" >
+37-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:21:13-56
+38            <intent-filter>
+38-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:22:13-26:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:17-69
+39-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:25:17-77
+41-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:25:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:28:9-30:59
+45            android:name="com.example.blog_app.MainActivity"
+45-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:29:13-41
+46            android:theme="@style/AppTheme.NoActionBar" />
+46-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:30:13-56
+47        <activity
+47-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:28:9-37:20
+48            android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity"
+48-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:29:13-96
+49            android:exported="true"
+49-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:30:13-36
+50            android:multiprocess="true"
+50-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:31:13-40
+51            android:taskAffinity=""
+51-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:32:13-36
+52            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
+52-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:33:13-78
+53            <intent-filter>
+53-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:34:13-36:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:17-69
+54-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:25-66
+55            </intent-filter>
+56        </activity>
 57
-58        <activity
-58-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
-59            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-59-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
-60            android:excludeFromRecents="true"
-60-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
-61            android:exported="true"
-61-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
-62            android:launchMode="singleTask"
-62-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
-63            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-63-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
-64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-64-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
-65
-66        <service
-66-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
-67            android:name="com.google.firebase.components.ComponentDiscoveryService"
-67-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
-68            android:directBootAware="true"
-68-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-69            android:exported="false" >
-69-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
-70            <meta-data
-70-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
-71                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-71-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
-72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
-73            <meta-data
-73-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
-74                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-74-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
-75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
-76            <meta-data
-76-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dcb44c47f6d8d832253552beab827421\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:20:13-22:85
-77                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-77-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dcb44c47f6d8d832253552beab827421\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:21:17-111
-78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dcb44c47f6d8d832253552beab827421\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:22:17-82
+58        <service
+58-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\939a3c7e3d2fbfa640c157cd656b9405\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+59            android:name="androidx.room.MultiInstanceInvalidationService"
+59-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\939a3c7e3d2fbfa640c157cd656b9405\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+60            android:exported="false" />
+60-->[androidx.room:room-runtime:2.2.3] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\939a3c7e3d2fbfa640c157cd656b9405\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+61
+62        <provider
+62-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+63            android:name="com.squareup.picasso.PicassoProvider"
+63-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+64            android:authorities="com.example.blog_app.com.squareup.picasso"
+64-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+65            android:exported="false" />
+65-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\88243fb7529a40b80f8cf827526d2947\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+66
+67        <activity
+67-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+68            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+68-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+69            android:excludeFromRecents="true"
+69-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+70            android:exported="true"
+70-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+71            android:launchMode="singleTask"
+71-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+72            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+72-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+74
+75        <service
+75-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+76            android:name="com.google.firebase.components.ComponentDiscoveryService"
+76-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+78            android:exported="false" >
+78-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
 79            <meta-data
-79-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
-80                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-80-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+79-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+80                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+80-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+81-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d3929fce6d7245387786874073255cdd\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
 82            <meta-data
-82-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
-83                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-83-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+82-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+83                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+83-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
 84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
-85        </service>
-86
-87        <receiver
-87-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
-88            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-88-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
-89            android:exported="true"
-89-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
-90            android:permission="com.google.android.c2dm.permission.SEND" >
-90-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
-91            <intent-filter>
-91-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
-92                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-92-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
-92-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
-93            </intent-filter>
-94        </receiver>
+84-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\2b6de357146f6ac477aaec58d26d245d\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dcb44c47f6d8d832253552beab827421\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:20:13-22:85
+86                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+86-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dcb44c47f6d8d832253552beab827421\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:21:17-111
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\dcb44c47f6d8d832253552beab827421\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:22:17-82
+88            <meta-data
+88-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+89                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+89-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\9d9b523597eac7aaa0c3928ad13fd6a5\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+92                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+92-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+94        </service>
 95
-96        <activity
-96-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-97-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-98            android:exported="false"
-98-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-99-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-100
-101        <receiver
-101-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
-102            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-102-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
-103            android:enabled="true"
-103-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
-104            android:exported="false" >
-104-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
-105        </receiver>
-106        <receiver
-106-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
-107            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-107-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
-108            android:enabled="true"
-108-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
-109            android:exported="true"
-109-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
-110            android:permission="android.permission.INSTALL_PACKAGES" >
-110-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
-111            <intent-filter>
-111-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
-112                <action android:name="com.android.vending.INSTALL_REFERRER" />
-112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
-112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
-113            </intent-filter>
+96        <receiver
+96-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+97            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+97-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+98            android:exported="true"
+98-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+99            android:permission="com.google.android.c2dm.permission.SEND" >
+99-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+100            <intent-filter>
+100-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+101                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+101-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+101-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\f2ce7707be6be218f8e37ac9986c8a6e\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+102            </intent-filter>
+103        </receiver>
+104
+105        <activity
+105-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+106            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+106-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+107            android:exported="false"
+107-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+108            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+108-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\bf811189f20f55085ec41c0a928c7371\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+109
+110        <receiver
+110-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+111            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+111-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+113            android:exported="false" >
+113-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
 114        </receiver>
-115
-116        <service
-116-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
-117            android:name="com.google.android.gms.measurement.AppMeasurementService"
-117-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
-118            android:enabled="true"
-118-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
-119            android:exported="false" />
-119-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
-120        <service
-120-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
-121            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-121-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
-122            android:enabled="true"
-122-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
-123            android:exported="false"
-123-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
-124            android:permission="android.permission.BIND_JOB_SERVICE" />
-124-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
-125
-126        <provider
-126-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-127            android:name="com.google.firebase.provider.FirebaseInitProvider"
-127-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-128            android:authorities="com.example.blog_app.firebaseinitprovider"
-128-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-129            android:exported="false"
-129-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-130            android:initOrder="100" />
-130-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-131
-132        <meta-data
-132-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\311d75e782a39a0fbf5483a5b1ad84fb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-133            android:name="com.google.android.gms.version"
-133-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\311d75e782a39a0fbf5483a5b1ad84fb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-134            android:value="@integer/google_play_services_version" />
-134-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\311d75e782a39a0fbf5483a5b1ad84fb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-135
-136        <provider
-136-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-137            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-137-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-138            android:authorities="com.example.blog_app.lifecycle-process"
-138-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-139            android:exported="false"
-139-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-140            android:multiprocess="true" />
-140-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-141    </application>
-142
-143</manifest>
+115        <receiver
+115-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+116            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+116-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+117            android:enabled="true"
+117-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+118            android:exported="true"
+118-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+119            android:permission="android.permission.INSTALL_PACKAGES" >
+119-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+120            <intent-filter>
+120-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+121                <action android:name="com.android.vending.INSTALL_REFERRER" />
+121-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+121-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+122            </intent-filter>
+123        </receiver>
+124
+125        <service
+125-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+126            android:name="com.google.android.gms.measurement.AppMeasurementService"
+126-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+127            android:enabled="true"
+127-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+128            android:exported="false" />
+128-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+129        <service
+129-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+130            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+130-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+131            android:enabled="true"
+131-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+133            android:permission="android.permission.BIND_JOB_SERVICE" />
+133-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\026e42818dabf3ad50f582839710caca\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+134
+135        <provider
+135-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+136            android:name="com.google.firebase.provider.FirebaseInitProvider"
+136-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+137            android:authorities="com.example.blog_app.firebaseinitprovider"
+137-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+138            android:exported="false"
+138-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+139            android:initOrder="100" />
+139-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\79d2e02f9b1270520f6f5d3f8e15c357\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+140
+141        <meta-data
+141-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\311d75e782a39a0fbf5483a5b1ad84fb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+142            android:name="com.google.android.gms.version"
+142-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\311d75e782a39a0fbf5483a5b1ad84fb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+143            android:value="@integer/google_play_services_version" />
+143-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\311d75e782a39a0fbf5483a5b1ad84fb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+144
+145        <provider
+145-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+146            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+146-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+147            android:authorities="com.example.blog_app.lifecycle-process"
+147-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+148            android:exported="false"
+148-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+149            android:multiprocess="true" />
+149-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\0b3c8fe05a9130f47b5b7774fad1e4e0\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+150
+151        <activity
+151-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:27:9-33:20
+152            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+152-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:28:13-99
+153            android:theme="@style/InstrumentationActivityInvokerBootstrapActivityTheme" >
+153-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:29:13-88
+154            <intent-filter>
+154-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:34:13-36:29
+155                <action android:name="android.intent.action.MAIN" />
+155-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:17-69
+155-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:25-66
+156            </intent-filter>
+157        </activity>
+158        <activity
+158-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:34:9-40:20
+159            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+159-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:35:13-95
+160            android:theme="@style/InstrumentationActivityInvokerEmptyActivityTheme" >
+160-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:36:13-84
+161            <intent-filter>
+161-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:34:13-36:29
+162                <action android:name="android.intent.action.MAIN" />
+162-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:17-69
+162-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:25-66
+163            </intent-filter>
+164        </activity>
+165        <activity
+165-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:41:9-47:20
+166            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+166-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:42:13-103
+167            android:theme="@style/InstrumentationActivityInvokerFloatingActivityTheme" >
+167-->[androidx.test:core:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\d1a33b16a4067335c0f17e9431f95312\core-1.1.0\AndroidManifest.xml:43:13-87
+168            <intent-filter>
+168-->[androidx.fragment:fragment-testing:1.1.0] C:\Users\Ayodele\.gradle\caches\transforms-2\files-2.1\5e67d0560a7d4f6602c8efeeb738d17c\fragment-testing-1.1.0\AndroidManifest.xml:34:13-36:29
+169                <action android:name="android.intent.action.MAIN" />
+169-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:17-69
+169-->C:\Users\Ayodele\Desktop\Blog-App\app\src\main\AndroidManifest.xml:23:25-66
+170            </intent-filter>
+171        </activity>
+172    </application>
+173
+174</manifest>

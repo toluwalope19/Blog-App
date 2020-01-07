@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.blog_app.databinding.AddPostFragmentBindingImpl;
 import com.example.blog_app.databinding.CardRowBindingImpl;
+import com.example.blog_app.databinding.CommentRowBindingImpl;
 import com.example.blog_app.databinding.EditPostFragmentBindingImpl;
 import com.example.blog_app.databinding.FragmentHomeBindingImpl;
 import com.example.blog_app.databinding.FragmentPostDetailBindingImpl;
@@ -28,21 +29,24 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_CARDROW = 2;
 
-  private static final int LAYOUT_EDITPOSTFRAGMENT = 3;
+  private static final int LAYOUT_COMMENTROW = 3;
 
-  private static final int LAYOUT_FRAGMENTPOSTPAGERDETAIL = 4;
+  private static final int LAYOUT_EDITPOSTFRAGMENT = 4;
 
-  private static final int LAYOUT_HOMEFRAGMENT = 5;
+  private static final int LAYOUT_FRAGMENTPOSTPAGERDETAIL = 5;
 
-  private static final int LAYOUT_HOMEPOSTROW = 6;
+  private static final int LAYOUT_HOMEFRAGMENT = 6;
 
-  private static final int LAYOUT_POSTDETAILFRAGMENT = 7;
+  private static final int LAYOUT_HOMEPOSTROW = 7;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(7);
+  private static final int LAYOUT_POSTDETAILFRAGMENT = 8;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(8);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.blog_app.R.layout.add_post_fragment, LAYOUT_ADDPOSTFRAGMENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.blog_app.R.layout.card_row, LAYOUT_CARDROW);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.blog_app.R.layout.comment_row, LAYOUT_COMMENTROW);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.blog_app.R.layout.edit_post_fragment, LAYOUT_EDITPOSTFRAGMENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.blog_app.R.layout.fragment_post_pager_detail, LAYOUT_FRAGMENTPOSTPAGERDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.blog_app.R.layout.home_fragment, LAYOUT_HOMEFRAGMENT);
@@ -70,6 +74,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new CardRowBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for card_row is invalid. Received: " + tag);
+        }
+        case  LAYOUT_COMMENTROW: {
+          if ("layout/comment_row_0".equals(tag)) {
+            return new CommentRowBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for comment_row is invalid. Received: " + tag);
         }
         case  LAYOUT_EDITPOSTFRAGMENT: {
           if ("layout/edit_post_fragment_0".equals(tag)) {
@@ -146,21 +156,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(4);
+    static final SparseArray<String> sKeys = new SparseArray<String>(5);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "post");
-      sKeys.put(2, "posts");
+      sKeys.put(1, "comments");
+      sKeys.put(2, "post");
+      sKeys.put(3, "posts");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(8);
 
     static {
       sKeys.put("layout/add_post_fragment_0", com.example.blog_app.R.layout.add_post_fragment);
       sKeys.put("layout/card_row_0", com.example.blog_app.R.layout.card_row);
+      sKeys.put("layout/comment_row_0", com.example.blog_app.R.layout.comment_row);
       sKeys.put("layout/edit_post_fragment_0", com.example.blog_app.R.layout.edit_post_fragment);
       sKeys.put("layout/fragment_post_pager_detail_0", com.example.blog_app.R.layout.fragment_post_pager_detail);
       sKeys.put("layout/home_fragment_0", com.example.blog_app.R.layout.home_fragment);

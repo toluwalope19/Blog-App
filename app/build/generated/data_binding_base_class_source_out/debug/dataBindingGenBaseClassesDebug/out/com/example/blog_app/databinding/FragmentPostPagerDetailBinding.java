@@ -4,23 +4,22 @@ package com.example.blog_app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.Guideline;
+import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 import com.example.blog_app.R;
 import com.example.blog_app.model.Post;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentPostPagerDetailBinding extends ViewDataBinding {
-  @NonNull
-  public final ImageView back;
-
   @NonNull
   public final TextView detailCategory;
 
@@ -31,37 +30,36 @@ public abstract class FragmentPostPagerDetailBinding extends ViewDataBinding {
   public final TextView detailTitle;
 
   @NonNull
-  public final Guideline guideline;
-
-  @NonNull
-  public final Guideline guideline2;
-
-  @NonNull
-  public final Guideline guideline3;
-
-  @NonNull
-  public final ImageView imageView3;
+  public final EditText newComment;
 
   @NonNull
   public final TextView postDetail;
+
+  @NonNull
+  public final RecyclerView recyclerComment;
+
+  @NonNull
+  public final ImageView sendComment;
+
+  @NonNull
+  public final Toolbar toolbar;
 
   @Bindable
   protected Post mPosts;
 
   protected FragmentPostPagerDetailBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, ImageView back, TextView detailCategory, ImageView detailImage,
-      TextView detailTitle, Guideline guideline, Guideline guideline2, Guideline guideline3,
-      ImageView imageView3, TextView postDetail) {
+      int _localFieldCount, TextView detailCategory, ImageView detailImage, TextView detailTitle,
+      EditText newComment, TextView postDetail, RecyclerView recyclerComment, ImageView sendComment,
+      Toolbar toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.back = back;
     this.detailCategory = detailCategory;
     this.detailImage = detailImage;
     this.detailTitle = detailTitle;
-    this.guideline = guideline;
-    this.guideline2 = guideline2;
-    this.guideline3 = guideline3;
-    this.imageView3 = imageView3;
+    this.newComment = newComment;
     this.postDetail = postDetail;
+    this.recyclerComment = recyclerComment;
+    this.sendComment = sendComment;
+    this.toolbar = toolbar;
   }
 
   public abstract void setPosts(@Nullable Post posts);

@@ -1108,6 +1108,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
+drawable addscreen
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1146,12 +1147,14 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable details
 drawable edittext
 drawable facebook
 drawable gallery
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable heart
+drawable home
 drawable home_icon
 drawable ic_add_circle_outline_black_24dp
 drawable ic_check_black_24dp
@@ -1191,6 +1194,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pinterest
 drawable post_background
+drawable send
 drawable star
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1287,7 +1291,6 @@ id all
 id always
 id async
 id auto
-id back
 id barrier
 id beginning
 id blocking
@@ -1365,9 +1368,6 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
-id guideline
-id guideline2
-id guideline3
 id home
 id homeAsUp
 id homeFragment
@@ -1409,6 +1409,7 @@ id navigation_post
 id navigation_profile
 id navigation_search
 id never
+id newComment
 id none
 id normal
 id notRegistered
@@ -1433,14 +1434,11 @@ id postDetailFragment
 id postPagerDetailFragment
 id post_detail
 id profileFragment
-id profile_image
-id profile_name
-id profile_role
 id progress_circular
 id progress_horizontal
 id radio
 id readyRegistered
-id recycler_storiesProfile
+id recyclerComment
 id recycler_viewHome
 id regUser
 id right
@@ -1467,6 +1465,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id sendComment
 id shortcut
 id showCustom
 id showHome
@@ -1598,6 +1597,7 @@ layout activity_register
 layout activity_splash
 layout add_post_fragment
 layout card_row
+layout comment_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1635,7 +1635,6 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout post_detail_fragment
-layout profile_fragment
 layout search_bar
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -1931,6 +1930,10 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style Divider
+style FragmentScenarioEmptyFragmentActivityTheme
+style InstrumentationActivityInvokerBootstrapActivityTheme
+style InstrumentationActivityInvokerEmptyActivityTheme
+style InstrumentationActivityInvokerFloatingActivityTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
