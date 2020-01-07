@@ -25,11 +25,11 @@ This is a Simple Blog App to perform basic Room operations such as
 
 # ScreenShots
 
-Homescreen: 
-<img src="https://github.com/toluwalope19/Blog-App/blob/master/app/src/main/res/drawable/home.png" alt="drawing" width="200"/>
-AddPost: 
-<img src="https://github.com/toluwalope19/Blog-App/raw/master/app/src/main/res/drawable/addscreen.png" alt="drawing" width="200"/>
 
+AddPost:
+<img src="https://github.com/toluwalope19/Blog-App/blob/master/app/src/main/res/drawable/home.png" alt="drawing" width="200"/>
+Homescreen: 
+<img src="https://github.com/toluwalope19/Blog-App/raw/master/app/src/main/res/drawable/addscreen.png" alt="drawing" width="200"/>
 
 Read Post: 
 <img src="https://github.com/toluwalope19/Blog-App/raw/master/app/src/main/res/drawable/details.png" alt="drawing" width="200"/>
