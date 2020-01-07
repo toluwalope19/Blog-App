@@ -26,13 +26,13 @@ This is a Simple Blog App to perform basic Room operations such as
 # ScreenShots
 
 Inline-style: 
-![alt text](https://github.com/toluwalope19/Blow-App/raw/master/app/src/main/res/drawable/Add.PNG)
+![alt text](https://github.com/toluwalope19/Blow-App/raw/master/app/src/main/res/drawable/home.png)
 
 Inline-style: 
-![alt text](https://github.com/toluwalope19/Blow-App/raw/master/app/src/main/res/drawable/AddScreen.PNG)
+![alt text](https://github.com/toluwalope19/Blow-App/raw/master/app/src/main/res/drawable/addscreen.png)
 
 Inline-style: 
-![alt text](https://github.com/toluwalope19/Blow-App/raw/master/app/src/main/res/drawable/details.PNG)
+![alt text](https://github.com/toluwalope19/Blow-App/raw/master/app/src/main/res/drawable/details.png)
 
 
 # Libraries Used
